@@ -15,15 +15,16 @@ extern "C" {
 #define SDA_GPIO      GPIOF
 #define SDA_GPIO_PIN  GPIO_PIN_0
 /* ----------------------------------------------------------------------*/
-/*********** simulate IIC **************/
-#define SCL_H         SCL_GPIO->BSRR = SCL_GPIO_PIN	                    /* GPIO_SetBits(GPIOB , GPIO_Pin_6)   */
-#define SCL_L         SCL_GPIO->BSRR = (uint32_t)SCL_GPIO_PIN << 16u;   /* GPIO_ResetBits(GPIOB , GPIO_Pin_6) */
+/************************************************************************/
+/*********************** simulate IIC ***********************************/
+#define SCL_H         HAL_GPIO_WritePin(SCL_GPIO,SCL_GPIO_PIN,GPIO_PIN_SET)	                    /* GPIO_SetBits(GPIOB , GPIO_Pin_6)   */
+#define SCL_L         HAL_GPIO_WritePin(SCL_GPIO,SCL_GPIO_PIN,GPIO_PIN_RESET)               /* GPIO_ResetBits(GPIOB , GPIO_Pin_6) */
 
-#define SDA_H         SDA_GPIO->BSRR = SDA_GPIO_PIN	                    /* GPIO_SetBits(GPIOB , GPIO_Pin_7)   */
-#define SDA_L         SDA_GPIO->BSRR = (uint32_t)SDA_GPIO_PIN << 16u;    /* GPIO_ResetBits(GPIOB , GPIO_Pin_7) */
+#define SDA_H         HAL_GPIO_WritePin(SDA_GPIO,SDA_GPIO_PIN,GPIO_PIN_SET)	                    /* GPIO_SetBits(GPIOB , GPIO_Pin_7)   */
+#define SDA_L         HAL_GPIO_WritePin(SDA_GPIO,SDA_GPIO_PIN,GPIO_PIN_RESET)    /* GPIO_ResetBits(GPIOB , GPIO_Pin_7) */
 
-#define SCL_read      SCL_GPIO->IDR  & SCL_GPIO_PIN                      /* GPIO_ReadInputDataBit(GPIOB , GPIO_Pin_6) */
-#define SDA_read      SDA_GPIO->IDR  & SDA_GPIO_PIN	                    /* GPIO_ReadInputDataBit(GPIOB , GPIO_Pin_7) */
+#define SCL_read      HAL_GPIO_ReadPin(SCL_GPIO,SCL_GPIO_PIN)               /* GPIO_ReadInputDataBit(GPIOB , GPIO_Pin_6) */
+#define SDA_read      HAL_GPIO_ReadPin(SDA_GPIO,SDA_GPIO_PIN)	                    /* GPIO_ReadInputDataBit(GPIOB , GPIO_Pin_7) */
 /*----------------------------------------------------------*/
 uint8_t IIC_Write_One_Byte(uint8_t slave_addr,uint8_t control_addr,uint8_t data);
 uint8_t IIC_Read_One_Byte(uint8_t slave_addr,uint8_t control_addr);

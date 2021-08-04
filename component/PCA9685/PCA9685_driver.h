@@ -13,7 +13,7 @@ extern "C" {
 
 uint8_t PCA9685_Init();
 uint8_t PCA9685_SoftWareReset();
-
+uint8_t PCA9685_setAutoIncrement();
 #ifdef __cplusplus
 }
 #endif

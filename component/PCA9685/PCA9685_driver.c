@@ -16,17 +16,21 @@ extern UART_HandleTypeDef huart1;
  */
 uint8_t PCA9685_Init()
 {
-    uint8_t bit7_RESTART,res=0Xff;
+    uint8_t bit7_RESTART,res=0Xf1;
     IIC_Init();
-    HAL_GPIO_WritePin(GPIOF,GPIO_PIN_0,GPIO_PIN_SET);
-    res = HAL_GPIO_ReadPin(GPIOF,GPIO_PIN_0);//IIC_Read_One_Byte(PCA9685_ADDR,MODE1);
-    HAL_UART_Transmit_DMA(&huart1,&res,1);
-    if((res << 7) == 1) {                                  //check the
+    res = IIC_Read_One_Byte(PCA9685_ADDR,MODE1);
+    //HAL_UART_Transmit_DMA(&huart1,&res,1);             ///debug
+    if((res >> 7) == 1) {                                  //check the
         IIC_Write_One_Byte(PCA9685_ADDR,MODE1,0X10);  //clear the SLEEP bit from 1 to 0
-        HAL_GPIO_WritePin(LED_R_GPIO_Port,LED_R_Pin,GPIO_PIN_RESET);
+        HAL_GPIO_WritePin(LED_B_GPIO_Port,LED_B_Pin,GPIO_PIN_SET);
     }
-    HAL_Delay(1);                  // Allow time for oscillator to stabilize
-    IIC_Write_One_Byte(PCA9685_ADDR,MODE1,0X80);      //Write logic 1 to bit 7(RESTART)
+    HAL_Delay(1);                                     // Allow time for oscillator to stabilize
+    if(IIC_Write_One_Byte(PCA9685_ADDR,MODE1,0X80)!= 0)      //Write logic 1 to bit 7(RESTART)
+    {
+        HAL_GPIO_WritePin(LED_R_GPIO_Port,LED_R_Pin,GPIO_PIN_SET);
+        return 1;
+    }
+    return 0;
 }
 /**
  * @brief   take a software reset for PCA9685 to reset all the devices to the power-up state
@@ -49,4 +53,22 @@ uint8_t PCA9685_SoftWareReset()
     else
         IIC_Stop();
     return 0;
+}
+
+/**
+ * @brief   set MODE1 's AI Bit to 1 for enabling Auto-Increment
+ * @return  0: right
+ *          1: false
+ */
+uint8_t PCA9685_setAutoIncrement()
+{
+    uint8_t res;
+    IIC_Write_One_Byte(PCA9685_ADDR,MODE1,0X20);
+    res = IIC_Read_One_Byte(PCA9685_ADDR,MODE1);
+    HAL_UART_Transmit_DMA(&huart1,&res,1);          ///debug
+    if((res >> 5) == 1)
+        return 0;
+    else
+        HAL_GPIO_WritePin(LED_R_GPIO_Port,LED_R_Pin,GPIO_PIN_SET);
+    return 1;
 }
