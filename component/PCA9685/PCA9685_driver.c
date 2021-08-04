@@ -18,7 +18,8 @@ uint8_t PCA9685_Init()
 {
     uint8_t bit7_RESTART,res=0Xff;
     IIC_Init();
-    res = IIC_Read_One_Byte(PCA9685_ADDR,MODE1);
+    HAL_GPIO_WritePin(GPIOF,GPIO_PIN_0,GPIO_PIN_SET);
+    res = HAL_GPIO_ReadPin(GPIOF,GPIO_PIN_0);//IIC_Read_One_Byte(PCA9685_ADDR,MODE1);
     HAL_UART_Transmit_DMA(&huart1,&res,1);
     if((res << 7) == 1) {                                  //check the
         IIC_Write_One_Byte(PCA9685_ADDR,MODE1,0X10);  //clear the SLEEP bit from 1 to 0

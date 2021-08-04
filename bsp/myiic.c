@@ -15,13 +15,13 @@ void IIC_Init(void)
     */
     /*Configure GPIO pins : PF0 PF1 */
     GPIO_InitStruct.Pin = GPIO_PIN_0|GPIO_PIN_1;
-    GPIO_InitStruct.Mode = GPIO_MODE_AF_OD;
+    GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_OD;
     GPIO_InitStruct.Pull = GPIO_PULLUP;
     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
     HAL_GPIO_Init(GPIOF, &GPIO_InitStruct);
-    while(1);
+
     IIC_Stop();          //pull up the SDA and SCL
-    HAL_Delay(50);
+    HAL_Delay(1);
 }
 
 
