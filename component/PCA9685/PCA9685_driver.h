@@ -11,9 +11,8 @@ extern "C" {
 
 #include "PCA9685_register.h"
 
-
-void PCA9685_Init();
-
+uint8_t PCA9685_Init();
+uint8_t PCA9685_SoftWareReset();
 
 #ifdef __cplusplus
 }

@@ -3,9 +3,10 @@
 //
 #ifndef JOINT_CLION_PCA9685_REGISTER_H
 #define JOINT_CLION_PCA9685_REGISTER_H
-
-
+#include "main.h"
 /***********  PCA9685 Register Map  ************/
+const uint8_t SWRST_Data_Byte = 0X06;
+#define PCA9685_ADDR 0X40       //// 1 A5 A4 A3 A2 A1 A0
 #define MODE1       0X00        /**  Mode register 1  **/
 /**   Bit[7]    RESTART    R: Shows state of RESTART logic.  W:(0*):Restart disabled (1):Restart enabled
  *    Bit[6]    EXTCLK     R/W: (0*):Use internal clock.  (1): Use EXTCLK pin clock

@@ -50,20 +50,14 @@ void MX_GPIO_Init(void)
   __HAL_RCC_GPIOE_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOH, LED_R_Pin|LED_B_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOH, LED_R_Pin|LED_G_Pin|LED_B_Pin, GPIO_PIN_RESET);
 
-  /*Configure GPIO pins : PHPin PHPin */
-  GPIO_InitStruct.Pin = LED_R_Pin|LED_B_Pin;
+  /*Configure GPIO pins : PHPin PHPin PHPin */
+  GPIO_InitStruct.Pin = LED_R_Pin|LED_G_Pin|LED_B_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOH, &GPIO_InitStruct);
-
-  /*Configure GPIO pin : PtPin */
-  GPIO_InitStruct.Pin = LED_G_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(LED_G_GPIO_Port, &GPIO_InitStruct);
 
 }
 
