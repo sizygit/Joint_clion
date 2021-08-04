@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Joint_Clion"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Joint_Clion.elf">
+				<Option output="/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug/Joint_Clion.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DARM_MATH_CM4"/>
+					<Add option="-DARM_MATH_MATRIX_CHECK"/>
+					<Add option="-DARM_MATH_ROUNDING"/>
+					<Add option="-DDEBUG"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-DSTM32F407xx"/>
+					<Add directory="/home/szy/STM32-files/Joint_clion/Joint_Clion/Core/Inc"/>
+					<Add directory="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/STM32F4xx_HAL_Driver/Inc"/>
+					<Add directory="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="/home/szy/STM32-files/Joint_clion/Joint_Clion/Middlewares/Third_Party/FreeRTOS/Source/include"/>
+					<Add directory="/home/szy/STM32-files/Joint_clion/Joint_Clion/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS"/>
+					<Add directory="/home/szy/STM32-files/Joint_clion/Joint_Clion/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F"/>
+					<Add directory="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/CMSIS/Device/ST/STM32F4xx/Include"/>
+					<Add directory="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/CMSIS/Include"/>
+					<Add directory="/home/szy/STM32-files/Joint_clion/Joint_Clion/Algorithms/PID"/>
+					<Add directory="/home/szy/STM32-files/Joint_clion/Joint_Clion/Applications"/>
+					<Add directory="/home/szy/STM32-files/Joint_clion/Joint_Clion/component/PCA9685"/>
+					<Add directory="/home/szy/STM32-files/Joint_clion/Joint_Clion/bsp"/>
+					<Add directory="/home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/include/c++/7.2.1"/>
+					<Add directory="/home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/include/c++/7.2.1/arm-none-eabi"/>
+					<Add directory="/home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/include/c++/7.2.1/backward"/>
+					<Add directory="/home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/include"/>
+					<Add directory="/home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/include-fixed"/>
+					<Add directory="/home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 Joint_Clion.elf"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Joint_Clion.elf/fast">
+				<Option output="/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug/Joint_Clion.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DARM_MATH_CM4"/>
+					<Add option="-DARM_MATH_MATRIX_CHECK"/>
+					<Add option="-DARM_MATH_ROUNDING"/>
+					<Add option="-DDEBUG"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-DSTM32F407xx"/>
+					<Add directory="/home/szy/STM32-files/Joint_clion/Joint_Clion/Core/Inc"/>
+					<Add directory="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/STM32F4xx_HAL_Driver/Inc"/>
+					<Add directory="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="/home/szy/STM32-files/Joint_clion/Joint_Clion/Middlewares/Third_Party/FreeRTOS/Source/include"/>
+					<Add directory="/home/szy/STM32-files/Joint_clion/Joint_Clion/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS"/>
+					<Add directory="/home/szy/STM32-files/Joint_clion/Joint_Clion/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F"/>
+					<Add directory="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/CMSIS/Device/ST/STM32F4xx/Include"/>
+					<Add directory="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/CMSIS/Include"/>
+					<Add directory="/home/szy/STM32-files/Joint_clion/Joint_Clion/Algorithms/PID"/>
+					<Add directory="/home/szy/STM32-files/Joint_clion/Joint_Clion/Applications"/>
+					<Add directory="/home/szy/STM32-files/Joint_clion/Joint_Clion/component/PCA9685"/>
+					<Add directory="/home/szy/STM32-files/Joint_clion/Joint_Clion/bsp"/>
+					<Add directory="/home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/include/c++/7.2.1"/>
+					<Add directory="/home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/include/c++/7.2.1/arm-none-eabi"/>
+					<Add directory="/home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/include/c++/7.2.1/backward"/>
+					<Add directory="/home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/include"/>
+					<Add directory="/home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/include-fixed"/>
+					<Add directory="/home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 Joint_Clion.elf/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Algorithms/PID/pid.cpp">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Algorithms/PID/pid.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Applications/Joint_Task.cpp">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Applications/Joint_Task.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Core/Inc/FreeRTOSConfig.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Core/Inc/dma.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Core/Inc/gpio.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Core/Inc/main.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Core/Inc/stm32f4xx_hal_conf.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Core/Inc/stm32f4xx_it.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Core/Inc/tim.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Core/Inc/usart.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Core/Src/dma.c">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Core/Src/freertos.c">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Core/Src/gpio.c">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Core/Src/main.c">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Core/Src/stm32f4xx_hal_msp.c">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Core/Src/stm32f4xx_hal_timebase_tim.c">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Core/Src/stm32f4xx_it.c">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Core/Src/syscalls.c">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Core/Src/sysmem.c">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Core/Src/system_stm32f4xx.c">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Core/Src/tim.c">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Core/Src/usart.c">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Core/Startup/startup_stm32f407ighx.s">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/CMSIS/Include/cmsis_armcc.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/CMSIS/Include/cmsis_armclang.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/CMSIS/Include/cmsis_compiler.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/CMSIS/Include/cmsis_gcc.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/CMSIS/Include/cmsis_iccarm.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/CMSIS/Include/cmsis_version.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/CMSIS/Include/core_armv8mbl.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/CMSIS/Include/core_armv8mml.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/CMSIS/Include/core_cm0.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/CMSIS/Include/core_cm0plus.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/CMSIS/Include/core_cm1.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/CMSIS/Include/core_cm23.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/CMSIS/Include/core_cm3.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/CMSIS/Include/core_cm33.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/CMSIS/Include/core_cm4.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/CMSIS/Include/core_cm7.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/CMSIS/Include/core_sc000.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/CMSIS/Include/core_sc300.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/CMSIS/Include/mpu_armv7.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/CMSIS/Include/mpu_armv8.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/CMSIS/Include/tz_context.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Middlewares/Third_Party/FreeRTOS/Source/croutine.c">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Middlewares/Third_Party/FreeRTOS/Source/include/StackMacros.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Middlewares/Third_Party/FreeRTOS/Source/include/atomic.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Middlewares/Third_Party/FreeRTOS/Source/include/croutine.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Middlewares/Third_Party/FreeRTOS/Source/include/list.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Middlewares/Third_Party/FreeRTOS/Source/include/message_buffer.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Middlewares/Third_Party/FreeRTOS/Source/include/mpu_prototypes.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Middlewares/Third_Party/FreeRTOS/Source/include/portable.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Middlewares/Third_Party/FreeRTOS/Source/include/queue.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Middlewares/Third_Party/FreeRTOS/Source/include/stack_macros.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Middlewares/Third_Party/FreeRTOS/Source/include/stream_buffer.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Middlewares/Third_Party/FreeRTOS/Source/include/task.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Middlewares/Third_Party/FreeRTOS/Source/include/timers.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Middlewares/Third_Party/FreeRTOS/Source/list.c">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Middlewares/Third_Party/FreeRTOS/Source/queue.c">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Middlewares/Third_Party/FreeRTOS/Source/tasks.c">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/Middlewares/Third_Party/FreeRTOS/Source/timers.c">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/STM32F407IGHX_FLASH.ld">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/bsp/delay.c">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/bsp/delay.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/bsp/myiic.c">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/bsp/myiic.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/component/PCA9685/PCA9685_driver.cpp">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/component/PCA9685/PCA9685_driver.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/component/PCA9685/PCA9685_register.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
