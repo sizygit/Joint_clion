@@ -473,7 +473,7 @@
 		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/bsp/myiic.h">
 			<Option target="Joint_Clion.elf"/>
 		</Unit>
-		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/component/PCA9685/PCA9685_driver.cpp">
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/component/PCA9685/PCA9685_driver.c">
 			<Option target="Joint_Clion.elf"/>
 		</Unit>
 		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/component/PCA9685/PCA9685_driver.h">

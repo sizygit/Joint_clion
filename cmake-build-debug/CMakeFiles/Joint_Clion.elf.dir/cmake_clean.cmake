@@ -42,7 +42,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj"
   "CMakeFiles/Joint_Clion.elf.dir/bsp/delay.c.obj"
   "CMakeFiles/Joint_Clion.elf.dir/bsp/myiic.c.obj"
-  "CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.cpp.obj"
+  "CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.obj"
   "Joint_Clion.elf"
   "Joint_Clion.elf.pdb"
 )

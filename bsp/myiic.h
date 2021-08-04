@@ -10,10 +10,10 @@ extern "C" {
 #include "main.h"
 
 /* Private define--you should adapt to fact------------------------------*/
-#define SCL_GPIO      GPIOB
-#define SCL_GPIO_PIN  GPIO_PIN_6
-#define SDA_GPIO      GPIOB
-#define SDA_GPIO_PIN  GPIO_PIN_7
+#define SCL_GPIO      GPIOF
+#define SCL_GPIO_PIN  GPIO_PIN_1
+#define SDA_GPIO      GPIOF
+#define SDA_GPIO_PIN  GPIO_PIN_0
 /* ----------------------------------------------------------------------*/
 /*********** simulate IIC **************/
 #define SCL_H         SCL_GPIO->BSRR = SCL_GPIO_PIN	                    /* GPIO_SetBits(GPIOB , GPIO_Pin_6)   */

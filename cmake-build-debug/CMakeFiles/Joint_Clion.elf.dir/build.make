@@ -627,18 +627,18 @@ CMakeFiles/Joint_Clion.elf.dir/bsp/myiic.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Joint_Clion.elf.dir/bsp/myiic.c.s"
 	/home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/szy/STM32-files/Joint_clion/Joint_Clion/bsp/myiic.c -o CMakeFiles/Joint_Clion.elf.dir/bsp/myiic.c.s
 
-CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.cpp.obj: CMakeFiles/Joint_Clion.elf.dir/flags.make
-CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.cpp.obj: ../component/PCA9685/PCA9685_driver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.cpp.obj"
-	/home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.cpp.obj -c /home/szy/STM32-files/Joint_clion/Joint_Clion/component/PCA9685/PCA9685_driver.cpp
+CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.obj: CMakeFiles/Joint_Clion.elf.dir/flags.make
+CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.obj: ../component/PCA9685/PCA9685_driver.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.obj"
+	/home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.obj -c /home/szy/STM32-files/Joint_clion/Joint_Clion/component/PCA9685/PCA9685_driver.c
 
-CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.cpp.i"
-	/home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/szy/STM32-files/Joint_clion/Joint_Clion/component/PCA9685/PCA9685_driver.cpp > CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.cpp.i
+CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.i"
+	/home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/szy/STM32-files/Joint_clion/Joint_Clion/component/PCA9685/PCA9685_driver.c > CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.i
 
-CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.cpp.s"
-	/home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/szy/STM32-files/Joint_clion/Joint_Clion/component/PCA9685/PCA9685_driver.cpp -o CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.cpp.s
+CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.s"
+	/home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/szy/STM32-files/Joint_clion/Joint_Clion/component/PCA9685/PCA9685_driver.c -o CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.s
 
 # Object files for target Joint_Clion.elf
 Joint_Clion_elf_OBJECTS = \
@@ -685,7 +685,7 @@ Joint_Clion_elf_OBJECTS = \
 "CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj" \
 "CMakeFiles/Joint_Clion.elf.dir/bsp/delay.c.obj" \
 "CMakeFiles/Joint_Clion.elf.dir/bsp/myiic.c.obj" \
-"CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.cpp.obj"
+"CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.obj"
 
 # External object files for target Joint_Clion.elf
 Joint_Clion_elf_EXTERNAL_OBJECTS =
@@ -733,7 +733,7 @@ Joint_Clion.elf: CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS
 Joint_Clion.elf: CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
 Joint_Clion.elf: CMakeFiles/Joint_Clion.elf.dir/bsp/delay.c.obj
 Joint_Clion.elf: CMakeFiles/Joint_Clion.elf.dir/bsp/myiic.c.obj
-Joint_Clion.elf: CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.cpp.obj
+Joint_Clion.elf: CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.obj
 Joint_Clion.elf: CMakeFiles/Joint_Clion.elf.dir/build.make
 Joint_Clion.elf: CMakeFiles/Joint_Clion.elf.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Linking CXX executable Joint_Clion.elf"

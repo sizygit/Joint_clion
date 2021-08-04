@@ -3,9 +3,10 @@
 //
 
 #include "PCA9685_driver.h"
-
+#include "myiic.h"
 
 void PCA9685_Init()
 {
+    IIC_Init();
 
 }

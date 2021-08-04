@@ -1285,32 +1285,32 @@ bsp/myiic.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Joint_Clion.elf.dir/build.make CMakeFiles/Joint_Clion.elf.dir/bsp/myiic.c.s
 .PHONY : bsp/myiic.c.s
 
-component/PCA9685/PCA9685_driver.obj: component/PCA9685/PCA9685_driver.cpp.obj
+component/PCA9685/PCA9685_driver.obj: component/PCA9685/PCA9685_driver.c.obj
 
 .PHONY : component/PCA9685/PCA9685_driver.obj
 
 # target to build an object file
-component/PCA9685/PCA9685_driver.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Joint_Clion.elf.dir/build.make CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.cpp.obj
-.PHONY : component/PCA9685/PCA9685_driver.cpp.obj
+component/PCA9685/PCA9685_driver.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Joint_Clion.elf.dir/build.make CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.obj
+.PHONY : component/PCA9685/PCA9685_driver.c.obj
 
-component/PCA9685/PCA9685_driver.i: component/PCA9685/PCA9685_driver.cpp.i
+component/PCA9685/PCA9685_driver.i: component/PCA9685/PCA9685_driver.c.i
 
 .PHONY : component/PCA9685/PCA9685_driver.i
 
 # target to preprocess a source file
-component/PCA9685/PCA9685_driver.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Joint_Clion.elf.dir/build.make CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.cpp.i
-.PHONY : component/PCA9685/PCA9685_driver.cpp.i
+component/PCA9685/PCA9685_driver.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Joint_Clion.elf.dir/build.make CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.i
+.PHONY : component/PCA9685/PCA9685_driver.c.i
 
-component/PCA9685/PCA9685_driver.s: component/PCA9685/PCA9685_driver.cpp.s
+component/PCA9685/PCA9685_driver.s: component/PCA9685/PCA9685_driver.c.s
 
 .PHONY : component/PCA9685/PCA9685_driver.s
 
 # target to generate assembly for a file
-component/PCA9685/PCA9685_driver.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Joint_Clion.elf.dir/build.make CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.cpp.s
-.PHONY : component/PCA9685/PCA9685_driver.cpp.s
+component/PCA9685/PCA9685_driver.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Joint_Clion.elf.dir/build.make CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.s
+.PHONY : component/PCA9685/PCA9685_driver.c.s
 
 # Help Target
 help:

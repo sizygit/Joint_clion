@@ -76,6 +76,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/szy/STM32-files/Joint_clion/Joint_Clion/Middlewares/Third_Party/FreeRTOS/Source/timers.c" "/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug/CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj"
   "/home/szy/STM32-files/Joint_clion/Joint_Clion/bsp/delay.c" "/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug/CMakeFiles/Joint_Clion.elf.dir/bsp/delay.c.obj"
   "/home/szy/STM32-files/Joint_clion/Joint_Clion/bsp/myiic.c" "/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug/CMakeFiles/Joint_Clion.elf.dir/bsp/myiic.c.obj"
+  "/home/szy/STM32-files/Joint_clion/Joint_Clion/component/PCA9685/PCA9685_driver.c" "/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug/CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -107,7 +108,6 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/szy/STM32-files/Joint_clion/Joint_Clion/Algorithms/PID/pid.cpp" "/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug/CMakeFiles/Joint_Clion.elf.dir/Algorithms/PID/pid.cpp.obj"
   "/home/szy/STM32-files/Joint_clion/Joint_Clion/Applications/Joint_Task.cpp" "/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug/CMakeFiles/Joint_Clion.elf.dir/Applications/Joint_Task.cpp.obj"
-  "/home/szy/STM32-files/Joint_clion/Joint_Clion/component/PCA9685/PCA9685_driver.cpp" "/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug/CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
