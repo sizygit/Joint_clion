@@ -175,6 +175,77 @@ uint8_t IIC_Read_One_Byte(uint8_t slave_addr,uint8_t control_addr)
     IIC_Stop();
     return res;
 }
+/**
+ * @brief IIC continuous reading
+ *        -- enable register Auto-Increment
+ * @return
+ */
+uint8_t IIC_Read_Multi_Bytes(uint8_t slave_addr,uint8_t control_addr,uint8_t len,uint8_t *buf)
+{
+    /*IIC_Start();
+    IIC_Send_Byte((slave_addr<<1) | 0);  //slave address + Write Bit
+    if(IIC_Wait_Ack())                          //wait for acknowledge from slave
+    {
+        IIC_Stop();
+        return 1;
+    }
+    IIC_Send_Byte(control_addr);             //send the control address
+    IIC_Wait_Ack();                          //wait for acknowledge from slave
+    IIC_Start();
+    IIC_Send_Byte((slave_addr << 1) | 1);
+    IIC_Wait_Ack();
+    while(len)
+    {
+        if(len==1)*buf=IIC_Read_Byte(0);//读数据,发送nACK
+        else *buf=IIC_Read_Byte(1);		//读数据,发送ACK
+        len--;
+        buf++;
+    }
+    IIC_Stop();
+    return 0;*/
+    for (;  ; ) {
+        if (len == 1){
+            *buf = IIC_Read_One_Byte(slave_addr,control_addr);
+            return 0;
+        }
+        else
+        {
+            *buf = IIC_Read_One_Byte(slave_addr,control_addr);
+            len --;
+            buf ++;
+            control_addr ++;
+        }
+    }
+}
+/**
+ * @brief IIC continuous reading
+ *        -- enable register Auto-Increment
+ * @return
+ */
+uint8_t IIC_Write_Multi_Bytes(uint8_t slave_addr,uint8_t control_addr,uint8_t len,uint8_t *buf)
+{
+    uint8_t i;
+    IIC_Start();
+    IIC_Send_Byte((slave_addr<<1) | 0);  //slave address + Write Bit
+    if(IIC_Wait_Ack())	                     //wait for acknowledge
+    {
+        IIC_Stop();
+        return 1;
+    }
+    IIC_Send_Byte(control_addr);             //send the control address
+    IIC_Wait_Ack(); 	                     //wait for acknowledge
+    for(i=0;i<len;i++)
+    {
+        IIC_Send_Byte(buf[i]);	            //send data
+        if(IIC_Wait_Ack())
+        {
+            IIC_Stop();
+            return 1;
+        }
+    }
+    IIC_Stop();
+    return 0;
+}
 /*******************************************************************************
 * Function Name  : I2C_ReadByte
 * Description    : 检测设备工作正常并且通讯成功

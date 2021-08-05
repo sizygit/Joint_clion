@@ -38,7 +38,8 @@ uint8_t IIC_Read_Byte(unsigned char ack);
 uint8_t IIC_Wait_Ack(void);
 void IIC_Ack(void);
 void IIC_NAck(void);
-
+uint8_t IIC_Read_Multi_Bytes(uint8_t slave_addr,uint8_t control_addr,uint8_t len,uint8_t *buf);
+uint8_t IIC_Write_Multi_Bytes(uint8_t slave_addr,uint8_t control_addr,uint8_t len,uint8_t *buf);
 uint8_t checkDevice(uint8_t DeviceAddress);
 
 #ifdef __cplusplus

@@ -13,9 +13,9 @@ void Joint_Task(void const * argument)
 {
     if(PCA9685_SoftWareReset() != 0)
         HAL_GPIO_WritePin(LED_R_GPIO_Port,LED_R_Pin,GPIO_PIN_SET);
-    PCA9685_setFrequency(25);
+    PCA9685_setFrequency(50);
     PCA9685_Restart();
-
+    PCA9685_setPWM(0,0,103);
     while (1);
 
     if(HAL_TIM_Base_Start(&htim1) == HAL_OK)

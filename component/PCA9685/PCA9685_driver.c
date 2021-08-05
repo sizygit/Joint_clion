@@ -117,7 +117,23 @@ uint8_t PCA9685_setFrequency(uint16_t freq)
     if(IIC_Write_One_Byte(PCA9685_ADDR,PRE_SCALE,pre_scale))  return 1;
     IIC_Write_One_Byte(PCA9685_ADDR,MODE1,res);
     HAL_Delay(1);
-    IIC_Write_One_Byte(PCA9685_ADDR,MODE1,res | 0xa0);       //set Restart and AI Bit
+    IIC_Write_One_Byte(PCA9685_ADDR,MODE1,res | 0xa1);       //set Restart and AI Bit  ALLCALL
     HAL_Delay(1);
     return 0;
+}
+
+uint8_t PCA9685_setPWM(uint8_t pin, uint16_t led_on, uint16_t led_off)
+{
+    // pin 0 -15       count 0-4095
+    if(pin < 0 || pin > 15)
+        return 1;
+    uint8_t  buffer[4];
+    buffer[0] = led_on;
+    buffer[1] = led_on >> 8;
+    buffer[2] = led_off;
+    buffer[3] = led_off >> 8;
+    IIC_Write_Multi_Bytes(PCA9685_ADDR,LED0_ON_L + 4 * pin,4,buffer);
+    uint8_t res[4];                                                 ///debug
+    IIC_Read_Multi_Bytes(PCA9685_ADDR,LED0_ON_L + 4 * pin,4,res);   ///debug
+    HAL_UART_Transmit_DMA(&huart1,res,4);                           ///debug
 }
