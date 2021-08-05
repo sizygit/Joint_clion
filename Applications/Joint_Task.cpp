@@ -15,15 +15,14 @@ void Joint_Task(void const * argument)
         HAL_GPIO_WritePin(LED_R_GPIO_Port,LED_R_Pin,GPIO_PIN_SET);
     PCA9685_setFrequency(50);
     PCA9685_Restart();
-    PCA9685_setPWM(0,0,103);
-    while (1);
+    PCA9685_setPWM(0,0,110);
 
     if(HAL_TIM_Base_Start(&htim1) == HAL_OK)
         if(HAL_TIM_PWM_Start(&htim1,TIM_CHANNEL_1) == HAL_OK)
             HAL_GPIO_WritePin(LED_R_GPIO_Port,LED_R_Pin,GPIO_PIN_RESET);
 
 
-    __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,1100);
+    __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,1300);
 
     for(;;)
     {
