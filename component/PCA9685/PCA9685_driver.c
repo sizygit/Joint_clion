@@ -21,18 +21,18 @@ uint8_t PCA9685_Restart()
     res = IIC_Read_One_Byte(PCA9685_ADDR,MODE1);
     HAL_UART_Transmit_DMA(&huart1,&res,1);             ///debug
     if((res >> 7) == 1) {                                  //check the RESTART bit
-        IIC_Write_One_Byte(PCA9685_ADDR,MODE1,res | 0X10);  //clear the SLEEP bit from 1 to 0
+        IIC_Write_One_Byte(PCA9685_ADDR,MODE1,res & 0X6F);  //clear the SLEEP bit from 1 to 0
         HAL_GPIO_WritePin(LED_B_GPIO_Port,LED_B_Pin,GPIO_PIN_SET);
+        HAL_Delay(1);                                        // Allow time for oscillator to stabilize
     }
-    HAL_Delay(1);                                        // Allow time for oscillator to stabilize
     if(IIC_Write_One_Byte(PCA9685_ADDR,MODE1,0Xa0)!= 0)  //Write logic 1 to bit 7(RESTART) and AI no ALLCALL
     {                                                          //if needs EXTCLK
         HAL_GPIO_WritePin(LED_R_GPIO_Port,LED_R_Pin,GPIO_PIN_SET);
         return 1;
     }
-    HAL_Delay(1);
-    /*res = IIC_Read_One_Byte(PCA9685_ADDR,MODE1);            // 0X20 0010 0000
-    HAL_UART_Transmit_DMA(&huart1,&res,1);             ///debug*/
+    HAL_Delay(1);                                       // Allow time for oscillator to stabilize
+    res = IIC_Read_One_Byte(PCA9685_ADDR,MODE1);             // 0X20 0010 0000
+    HAL_UART_Transmit_DMA(&huart1,&res,1);             ///debug
     return 0;
 }
 /**
