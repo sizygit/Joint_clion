@@ -15,6 +15,7 @@ uint8_t PCA9685_Restart();
 uint8_t PCA9685_SoftWareReset();
 uint8_t PCA9685_setAutoIncrement();
 uint8_t PCA9685_setEXTCLK();
+uint8_t PCA9685_setFrequency(uint16_t freq);
 #ifdef __cplusplus
 }
 #endif

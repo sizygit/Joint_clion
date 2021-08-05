@@ -6,6 +6,7 @@
 #include "main.h"
 /***********  PCA9685 Register Map  ************/
 const uint8_t SWRST_Data_Byte = 0X06;
+#define INCLOCKFRE   25000000.0f
 #define PCA9685_ADDR 0X40       //// 1 A5 A4 A3 A2 A1 A0
 #define MODE1       0X00        /**  Mode register 1  **/
 /**   Bit[7]    RESTART    R: Shows state of RESTART logic.  W:(0*):Restart disabled (1):Restart enabled

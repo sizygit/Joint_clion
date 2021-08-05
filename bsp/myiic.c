@@ -157,6 +157,7 @@ uint8_t IIC_Write_One_Byte(uint8_t slave_addr,uint8_t control_addr,uint8_t data)
         return 1;
     }
     IIC_Stop();
+    return 0;
 }
 // the function which can use a full read data (a byte)
 uint8_t IIC_Read_One_Byte(uint8_t slave_addr,uint8_t control_addr)
