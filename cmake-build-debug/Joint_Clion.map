@@ -1419,6 +1419,10 @@ Discarded input sections
  .text          0x0000000000000000        0x0 CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.obj
+ .text.PCA9685_setAutoIncrement
+                0x0000000000000000       0x34 CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.obj
+ .text.PCA9685_setEXTCLK
+                0x0000000000000000       0x34 CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.obj
  .rodata.SWRST_Data_Byte
                 0x0000000000000000        0x1 CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.obj
  .text          0x0000000000000000        0x0 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libstdc++.a(class_type_info.o)
@@ -1841,7 +1845,7 @@ LOAD /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.
                 0x0000000008000000                g_pfnVectors
                 0x0000000008000188                . = ALIGN (0x4)
 
-.text           0x0000000008000190     0x544c
+.text           0x0000000008000190     0x5400
                 0x0000000008000190                . = ALIGN (0x4)
  *(.text)
  .text          0x0000000008000190       0x40 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
@@ -1901,493 +1905,492 @@ LOAD /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.
                 0x00000000080013dc                memcpy
  *(.text*)
  .text.Joint_Task
-                0x0000000008001510       0x24 CMakeFiles/Joint_Clion.elf.dir/Applications/Joint_Task.cpp.obj
+                0x0000000008001510       0x20 CMakeFiles/Joint_Clion.elf.dir/Applications/Joint_Task.cpp.obj
                 0x0000000008001510                Joint_Task
  .text.MX_DMA_Init
-                0x0000000008001534       0x44 CMakeFiles/Joint_Clion.elf.dir/Core/Src/dma.c.obj
-                0x0000000008001534                MX_DMA_Init
+                0x0000000008001530       0x44 CMakeFiles/Joint_Clion.elf.dir/Core/Src/dma.c.obj
+                0x0000000008001530                MX_DMA_Init
  .text.StartDefaultTask
-                0x0000000008001578        0xa CMakeFiles/Joint_Clion.elf.dir/Core/Src/freertos.c.obj
-                0x0000000008001578                StartDefaultTask
- *fill*         0x0000000008001582        0x2 
+                0x0000000008001574        0xa CMakeFiles/Joint_Clion.elf.dir/Core/Src/freertos.c.obj
+                0x0000000008001574                StartDefaultTask
+ *fill*         0x000000000800157e        0x2 
  .text.vApplicationGetIdleTaskMemory
-                0x0000000008001584       0x18 CMakeFiles/Joint_Clion.elf.dir/Core/Src/freertos.c.obj
-                0x0000000008001584                vApplicationGetIdleTaskMemory
+                0x0000000008001580       0x18 CMakeFiles/Joint_Clion.elf.dir/Core/Src/freertos.c.obj
+                0x0000000008001580                vApplicationGetIdleTaskMemory
  .text.MX_FREERTOS_Init
-                0x000000000800159c       0x50 CMakeFiles/Joint_Clion.elf.dir/Core/Src/freertos.c.obj
-                0x000000000800159c                MX_FREERTOS_Init
+                0x0000000008001598       0x50 CMakeFiles/Joint_Clion.elf.dir/Core/Src/freertos.c.obj
+                0x0000000008001598                MX_FREERTOS_Init
  .text.MX_GPIO_Init
-                0x00000000080015ec       0x94 CMakeFiles/Joint_Clion.elf.dir/Core/Src/gpio.c.obj
-                0x00000000080015ec                MX_GPIO_Init
+                0x00000000080015e8       0x94 CMakeFiles/Joint_Clion.elf.dir/Core/Src/gpio.c.obj
+                0x00000000080015e8                MX_GPIO_Init
  .text.HAL_TIM_PeriodElapsedCallback
-                0x0000000008001680       0x18 CMakeFiles/Joint_Clion.elf.dir/Core/Src/main.c.obj
-                0x0000000008001680                HAL_TIM_PeriodElapsedCallback
+                0x000000000800167c       0x18 CMakeFiles/Joint_Clion.elf.dir/Core/Src/main.c.obj
+                0x000000000800167c                HAL_TIM_PeriodElapsedCallback
  .text.Error_Handler
-                0x0000000008001698        0x4 CMakeFiles/Joint_Clion.elf.dir/Core/Src/main.c.obj
-                0x0000000008001698                Error_Handler
+                0x0000000008001694        0x4 CMakeFiles/Joint_Clion.elf.dir/Core/Src/main.c.obj
+                0x0000000008001694                Error_Handler
  .text.SystemClock_Config
-                0x000000000800169c       0xa8 CMakeFiles/Joint_Clion.elf.dir/Core/Src/main.c.obj
-                0x000000000800169c                SystemClock_Config
- .text.main     0x0000000008001744       0x24 CMakeFiles/Joint_Clion.elf.dir/Core/Src/main.c.obj
-                0x0000000008001744                main
+                0x0000000008001698       0xa8 CMakeFiles/Joint_Clion.elf.dir/Core/Src/main.c.obj
+                0x0000000008001698                SystemClock_Config
+ .text.main     0x0000000008001740       0x24 CMakeFiles/Joint_Clion.elf.dir/Core/Src/main.c.obj
+                0x0000000008001740                main
  .text.HAL_MspInit
-                0x0000000008001768       0x44 CMakeFiles/Joint_Clion.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
-                0x0000000008001768                HAL_MspInit
+                0x0000000008001764       0x44 CMakeFiles/Joint_Clion.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+                0x0000000008001764                HAL_MspInit
  .text.HAL_InitTick
-                0x00000000080017ac       0x7c CMakeFiles/Joint_Clion.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj
-                0x00000000080017ac                HAL_InitTick
+                0x00000000080017a8       0x7c CMakeFiles/Joint_Clion.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj
+                0x00000000080017a8                HAL_InitTick
  .text.NMI_Handler
-                0x0000000008001828        0x2 CMakeFiles/Joint_Clion.elf.dir/Core/Src/stm32f4xx_it.c.obj
-                0x0000000008001828                NMI_Handler
+                0x0000000008001824        0x2 CMakeFiles/Joint_Clion.elf.dir/Core/Src/stm32f4xx_it.c.obj
+                0x0000000008001824                NMI_Handler
  .text.HardFault_Handler
-                0x000000000800182a        0x2 CMakeFiles/Joint_Clion.elf.dir/Core/Src/stm32f4xx_it.c.obj
-                0x000000000800182a                HardFault_Handler
+                0x0000000008001826        0x2 CMakeFiles/Joint_Clion.elf.dir/Core/Src/stm32f4xx_it.c.obj
+                0x0000000008001826                HardFault_Handler
  .text.MemManage_Handler
-                0x000000000800182c        0x2 CMakeFiles/Joint_Clion.elf.dir/Core/Src/stm32f4xx_it.c.obj
-                0x000000000800182c                MemManage_Handler
+                0x0000000008001828        0x2 CMakeFiles/Joint_Clion.elf.dir/Core/Src/stm32f4xx_it.c.obj
+                0x0000000008001828                MemManage_Handler
  .text.BusFault_Handler
-                0x000000000800182e        0x2 CMakeFiles/Joint_Clion.elf.dir/Core/Src/stm32f4xx_it.c.obj
-                0x000000000800182e                BusFault_Handler
+                0x000000000800182a        0x2 CMakeFiles/Joint_Clion.elf.dir/Core/Src/stm32f4xx_it.c.obj
+                0x000000000800182a                BusFault_Handler
  .text.UsageFault_Handler
-                0x0000000008001830        0x2 CMakeFiles/Joint_Clion.elf.dir/Core/Src/stm32f4xx_it.c.obj
-                0x0000000008001830                UsageFault_Handler
+                0x000000000800182c        0x2 CMakeFiles/Joint_Clion.elf.dir/Core/Src/stm32f4xx_it.c.obj
+                0x000000000800182c                UsageFault_Handler
  .text.DebugMon_Handler
-                0x0000000008001832        0x2 CMakeFiles/Joint_Clion.elf.dir/Core/Src/stm32f4xx_it.c.obj
-                0x0000000008001832                DebugMon_Handler
+                0x000000000800182e        0x2 CMakeFiles/Joint_Clion.elf.dir/Core/Src/stm32f4xx_it.c.obj
+                0x000000000800182e                DebugMon_Handler
  .text.TIM1_BRK_TIM9_IRQHandler
-                0x0000000008001834       0x18 CMakeFiles/Joint_Clion.elf.dir/Core/Src/stm32f4xx_it.c.obj
-                0x0000000008001834                TIM1_BRK_TIM9_IRQHandler
+                0x0000000008001830       0x18 CMakeFiles/Joint_Clion.elf.dir/Core/Src/stm32f4xx_it.c.obj
+                0x0000000008001830                TIM1_BRK_TIM9_IRQHandler
  .text.USART1_IRQHandler
-                0x000000000800184c       0x10 CMakeFiles/Joint_Clion.elf.dir/Core/Src/stm32f4xx_it.c.obj
-                0x000000000800184c                USART1_IRQHandler
+                0x0000000008001848       0x10 CMakeFiles/Joint_Clion.elf.dir/Core/Src/stm32f4xx_it.c.obj
+                0x0000000008001848                USART1_IRQHandler
  .text.DMA2_Stream2_IRQHandler
-                0x000000000800185c       0x10 CMakeFiles/Joint_Clion.elf.dir/Core/Src/stm32f4xx_it.c.obj
-                0x000000000800185c                DMA2_Stream2_IRQHandler
+                0x0000000008001858       0x10 CMakeFiles/Joint_Clion.elf.dir/Core/Src/stm32f4xx_it.c.obj
+                0x0000000008001858                DMA2_Stream2_IRQHandler
  .text.DMA2_Stream7_IRQHandler
-                0x000000000800186c       0x10 CMakeFiles/Joint_Clion.elf.dir/Core/Src/stm32f4xx_it.c.obj
-                0x000000000800186c                DMA2_Stream7_IRQHandler
- .text._getpid  0x000000000800187c        0x4 CMakeFiles/Joint_Clion.elf.dir/Core/Src/syscalls.c.obj
-                0x000000000800187c                _getpid
- .text._kill    0x0000000008001880       0x10 CMakeFiles/Joint_Clion.elf.dir/Core/Src/syscalls.c.obj
-                0x0000000008001880                _kill
- .text._exit    0x0000000008001890        0xc CMakeFiles/Joint_Clion.elf.dir/Core/Src/syscalls.c.obj
-                0x0000000008001890                _exit
- .text._sbrk    0x000000000800189c       0x48 CMakeFiles/Joint_Clion.elf.dir/Core/Src/sysmem.c.obj
-                0x000000000800189c                _sbrk
+                0x0000000008001868       0x10 CMakeFiles/Joint_Clion.elf.dir/Core/Src/stm32f4xx_it.c.obj
+                0x0000000008001868                DMA2_Stream7_IRQHandler
+ .text._getpid  0x0000000008001878        0x4 CMakeFiles/Joint_Clion.elf.dir/Core/Src/syscalls.c.obj
+                0x0000000008001878                _getpid
+ .text._kill    0x000000000800187c       0x10 CMakeFiles/Joint_Clion.elf.dir/Core/Src/syscalls.c.obj
+                0x000000000800187c                _kill
+ .text._exit    0x000000000800188c        0xc CMakeFiles/Joint_Clion.elf.dir/Core/Src/syscalls.c.obj
+                0x000000000800188c                _exit
+ .text._sbrk    0x0000000008001898       0x48 CMakeFiles/Joint_Clion.elf.dir/Core/Src/sysmem.c.obj
+                0x0000000008001898                _sbrk
  .text.SystemInit
-                0x00000000080018e4       0x14 CMakeFiles/Joint_Clion.elf.dir/Core/Src/system_stm32f4xx.c.obj
-                0x00000000080018e4                SystemInit
+                0x00000000080018e0       0x14 CMakeFiles/Joint_Clion.elf.dir/Core/Src/system_stm32f4xx.c.obj
+                0x00000000080018e0                SystemInit
  .text.HAL_TIM_Base_MspInit
-                0x00000000080018f8       0x40 CMakeFiles/Joint_Clion.elf.dir/Core/Src/tim.c.obj
-                0x00000000080018f8                HAL_TIM_Base_MspInit
+                0x00000000080018f4       0x40 CMakeFiles/Joint_Clion.elf.dir/Core/Src/tim.c.obj
+                0x00000000080018f4                HAL_TIM_Base_MspInit
  .text.HAL_TIM_MspPostInit
-                0x0000000008001938       0x5c CMakeFiles/Joint_Clion.elf.dir/Core/Src/tim.c.obj
-                0x0000000008001938                HAL_TIM_MspPostInit
+                0x0000000008001934       0x5c CMakeFiles/Joint_Clion.elf.dir/Core/Src/tim.c.obj
+                0x0000000008001934                HAL_TIM_MspPostInit
  .text.MX_TIM1_Init
-                0x0000000008001994       0xf0 CMakeFiles/Joint_Clion.elf.dir/Core/Src/tim.c.obj
-                0x0000000008001994                MX_TIM1_Init
+                0x0000000008001990       0xf0 CMakeFiles/Joint_Clion.elf.dir/Core/Src/tim.c.obj
+                0x0000000008001990                MX_TIM1_Init
  .text.MX_USART1_UART_Init
-                0x0000000008001a84       0x34 CMakeFiles/Joint_Clion.elf.dir/Core/Src/usart.c.obj
-                0x0000000008001a84                MX_USART1_UART_Init
+                0x0000000008001a80       0x34 CMakeFiles/Joint_Clion.elf.dir/Core/Src/usart.c.obj
+                0x0000000008001a80                MX_USART1_UART_Init
  .text.HAL_UART_MspInit
-                0x0000000008001ab8      0x134 CMakeFiles/Joint_Clion.elf.dir/Core/Src/usart.c.obj
-                0x0000000008001ab8                HAL_UART_MspInit
+                0x0000000008001ab4      0x134 CMakeFiles/Joint_Clion.elf.dir/Core/Src/usart.c.obj
+                0x0000000008001ab4                HAL_UART_MspInit
  .text.Reset_Handler
-                0x0000000008001bec       0x50 CMakeFiles/Joint_Clion.elf.dir/Core/Startup/startup_stm32f407ighx.s.obj
-                0x0000000008001bec                Reset_Handler
+                0x0000000008001be8       0x50 CMakeFiles/Joint_Clion.elf.dir/Core/Startup/startup_stm32f407ighx.s.obj
+                0x0000000008001be8                Reset_Handler
  .text.Default_Handler
-                0x0000000008001c3c        0x2 CMakeFiles/Joint_Clion.elf.dir/Core/Startup/startup_stm32f407ighx.s.obj
-                0x0000000008001c3c                RTC_Alarm_IRQHandler
-                0x0000000008001c3c                HASH_RNG_IRQHandler
-                0x0000000008001c3c                EXTI2_IRQHandler
-                0x0000000008001c3c                TIM8_CC_IRQHandler
-                0x0000000008001c3c                TIM1_CC_IRQHandler
-                0x0000000008001c3c                DMA2_Stream5_IRQHandler
-                0x0000000008001c3c                DMA1_Stream5_IRQHandler
-                0x0000000008001c3c                PVD_IRQHandler
-                0x0000000008001c3c                SDIO_IRQHandler
-                0x0000000008001c3c                TAMP_STAMP_IRQHandler
-                0x0000000008001c3c                CAN2_RX1_IRQHandler
-                0x0000000008001c3c                EXTI3_IRQHandler
-                0x0000000008001c3c                TIM8_TRG_COM_TIM14_IRQHandler
-                0x0000000008001c3c                TIM1_UP_TIM10_IRQHandler
-                0x0000000008001c3c                TIM8_UP_TIM13_IRQHandler
-                0x0000000008001c3c                I2C3_ER_IRQHandler
-                0x0000000008001c3c                EXTI0_IRQHandler
-                0x0000000008001c3c                I2C2_EV_IRQHandler
-                0x0000000008001c3c                DMA1_Stream2_IRQHandler
-                0x0000000008001c3c                CAN1_RX0_IRQHandler
-                0x0000000008001c3c                FPU_IRQHandler
-                0x0000000008001c3c                OTG_HS_WKUP_IRQHandler
-                0x0000000008001c3c                CAN2_SCE_IRQHandler
-                0x0000000008001c3c                SPI1_IRQHandler
-                0x0000000008001c3c                TIM6_DAC_IRQHandler
-                0x0000000008001c3c                DCMI_IRQHandler
-                0x0000000008001c3c                CAN2_RX0_IRQHandler
-                0x0000000008001c3c                DMA2_Stream3_IRQHandler
-                0x0000000008001c3c                USART6_IRQHandler
-                0x0000000008001c3c                USART3_IRQHandler
-                0x0000000008001c3c                CAN1_RX1_IRQHandler
-                0x0000000008001c3c                UART5_IRQHandler
-                0x0000000008001c3c                DMA2_Stream0_IRQHandler
-                0x0000000008001c3c                TIM4_IRQHandler
-                0x0000000008001c3c                I2C1_EV_IRQHandler
-                0x0000000008001c3c                DMA1_Stream6_IRQHandler
-                0x0000000008001c3c                DMA1_Stream1_IRQHandler
-                0x0000000008001c3c                UART4_IRQHandler
-                0x0000000008001c3c                TIM3_IRQHandler
-                0x0000000008001c3c                RCC_IRQHandler
-                0x0000000008001c3c                TIM8_BRK_TIM12_IRQHandler
-                0x0000000008001c3c                Default_Handler
-                0x0000000008001c3c                EXTI15_10_IRQHandler
-                0x0000000008001c3c                ADC_IRQHandler
-                0x0000000008001c3c                DMA1_Stream7_IRQHandler
-                0x0000000008001c3c                TIM7_IRQHandler
-                0x0000000008001c3c                CAN2_TX_IRQHandler
-                0x0000000008001c3c                TIM5_IRQHandler
-                0x0000000008001c3c                I2C3_EV_IRQHandler
-                0x0000000008001c3c                EXTI9_5_IRQHandler
-                0x0000000008001c3c                RTC_WKUP_IRQHandler
-                0x0000000008001c3c                ETH_WKUP_IRQHandler
-                0x0000000008001c3c                SPI2_IRQHandler
-                0x0000000008001c3c                OTG_HS_EP1_IN_IRQHandler
-                0x0000000008001c3c                DMA1_Stream0_IRQHandler
-                0x0000000008001c3c                CAN1_TX_IRQHandler
-                0x0000000008001c3c                EXTI4_IRQHandler
-                0x0000000008001c3c                FSMC_IRQHandler
-                0x0000000008001c3c                ETH_IRQHandler
-                0x0000000008001c3c                OTG_HS_EP1_OUT_IRQHandler
-                0x0000000008001c3c                WWDG_IRQHandler
-                0x0000000008001c3c                TIM2_IRQHandler
-                0x0000000008001c3c                OTG_FS_WKUP_IRQHandler
-                0x0000000008001c3c                TIM1_TRG_COM_TIM11_IRQHandler
-                0x0000000008001c3c                OTG_HS_IRQHandler
-                0x0000000008001c3c                EXTI1_IRQHandler
-                0x0000000008001c3c                USART2_IRQHandler
-                0x0000000008001c3c                I2C2_ER_IRQHandler
-                0x0000000008001c3c                DMA2_Stream1_IRQHandler
-                0x0000000008001c3c                CAN1_SCE_IRQHandler
-                0x0000000008001c3c                FLASH_IRQHandler
-                0x0000000008001c3c                DMA2_Stream4_IRQHandler
-                0x0000000008001c3c                OTG_FS_IRQHandler
-                0x0000000008001c3c                SPI3_IRQHandler
-                0x0000000008001c3c                DMA1_Stream4_IRQHandler
-                0x0000000008001c3c                I2C1_ER_IRQHandler
-                0x0000000008001c3c                DMA2_Stream6_IRQHandler
-                0x0000000008001c3c                DMA1_Stream3_IRQHandler
- *fill*         0x0000000008001c3e        0x2 
+                0x0000000008001c38        0x2 CMakeFiles/Joint_Clion.elf.dir/Core/Startup/startup_stm32f407ighx.s.obj
+                0x0000000008001c38                RTC_Alarm_IRQHandler
+                0x0000000008001c38                HASH_RNG_IRQHandler
+                0x0000000008001c38                EXTI2_IRQHandler
+                0x0000000008001c38                TIM8_CC_IRQHandler
+                0x0000000008001c38                TIM1_CC_IRQHandler
+                0x0000000008001c38                DMA2_Stream5_IRQHandler
+                0x0000000008001c38                DMA1_Stream5_IRQHandler
+                0x0000000008001c38                PVD_IRQHandler
+                0x0000000008001c38                SDIO_IRQHandler
+                0x0000000008001c38                TAMP_STAMP_IRQHandler
+                0x0000000008001c38                CAN2_RX1_IRQHandler
+                0x0000000008001c38                EXTI3_IRQHandler
+                0x0000000008001c38                TIM8_TRG_COM_TIM14_IRQHandler
+                0x0000000008001c38                TIM1_UP_TIM10_IRQHandler
+                0x0000000008001c38                TIM8_UP_TIM13_IRQHandler
+                0x0000000008001c38                I2C3_ER_IRQHandler
+                0x0000000008001c38                EXTI0_IRQHandler
+                0x0000000008001c38                I2C2_EV_IRQHandler
+                0x0000000008001c38                DMA1_Stream2_IRQHandler
+                0x0000000008001c38                CAN1_RX0_IRQHandler
+                0x0000000008001c38                FPU_IRQHandler
+                0x0000000008001c38                OTG_HS_WKUP_IRQHandler
+                0x0000000008001c38                CAN2_SCE_IRQHandler
+                0x0000000008001c38                SPI1_IRQHandler
+                0x0000000008001c38                TIM6_DAC_IRQHandler
+                0x0000000008001c38                DCMI_IRQHandler
+                0x0000000008001c38                CAN2_RX0_IRQHandler
+                0x0000000008001c38                DMA2_Stream3_IRQHandler
+                0x0000000008001c38                USART6_IRQHandler
+                0x0000000008001c38                USART3_IRQHandler
+                0x0000000008001c38                CAN1_RX1_IRQHandler
+                0x0000000008001c38                UART5_IRQHandler
+                0x0000000008001c38                DMA2_Stream0_IRQHandler
+                0x0000000008001c38                TIM4_IRQHandler
+                0x0000000008001c38                I2C1_EV_IRQHandler
+                0x0000000008001c38                DMA1_Stream6_IRQHandler
+                0x0000000008001c38                DMA1_Stream1_IRQHandler
+                0x0000000008001c38                UART4_IRQHandler
+                0x0000000008001c38                TIM3_IRQHandler
+                0x0000000008001c38                RCC_IRQHandler
+                0x0000000008001c38                TIM8_BRK_TIM12_IRQHandler
+                0x0000000008001c38                Default_Handler
+                0x0000000008001c38                EXTI15_10_IRQHandler
+                0x0000000008001c38                ADC_IRQHandler
+                0x0000000008001c38                DMA1_Stream7_IRQHandler
+                0x0000000008001c38                TIM7_IRQHandler
+                0x0000000008001c38                CAN2_TX_IRQHandler
+                0x0000000008001c38                TIM5_IRQHandler
+                0x0000000008001c38                I2C3_EV_IRQHandler
+                0x0000000008001c38                EXTI9_5_IRQHandler
+                0x0000000008001c38                RTC_WKUP_IRQHandler
+                0x0000000008001c38                ETH_WKUP_IRQHandler
+                0x0000000008001c38                SPI2_IRQHandler
+                0x0000000008001c38                OTG_HS_EP1_IN_IRQHandler
+                0x0000000008001c38                DMA1_Stream0_IRQHandler
+                0x0000000008001c38                CAN1_TX_IRQHandler
+                0x0000000008001c38                EXTI4_IRQHandler
+                0x0000000008001c38                FSMC_IRQHandler
+                0x0000000008001c38                ETH_IRQHandler
+                0x0000000008001c38                OTG_HS_EP1_OUT_IRQHandler
+                0x0000000008001c38                WWDG_IRQHandler
+                0x0000000008001c38                TIM2_IRQHandler
+                0x0000000008001c38                OTG_FS_WKUP_IRQHandler
+                0x0000000008001c38                TIM1_TRG_COM_TIM11_IRQHandler
+                0x0000000008001c38                OTG_HS_IRQHandler
+                0x0000000008001c38                EXTI1_IRQHandler
+                0x0000000008001c38                USART2_IRQHandler
+                0x0000000008001c38                I2C2_ER_IRQHandler
+                0x0000000008001c38                DMA2_Stream1_IRQHandler
+                0x0000000008001c38                CAN1_SCE_IRQHandler
+                0x0000000008001c38                FLASH_IRQHandler
+                0x0000000008001c38                DMA2_Stream4_IRQHandler
+                0x0000000008001c38                OTG_FS_IRQHandler
+                0x0000000008001c38                SPI3_IRQHandler
+                0x0000000008001c38                DMA1_Stream4_IRQHandler
+                0x0000000008001c38                I2C1_ER_IRQHandler
+                0x0000000008001c38                DMA2_Stream6_IRQHandler
+                0x0000000008001c38                DMA1_Stream3_IRQHandler
+ *fill*         0x0000000008001c3a        0x2 
  .text.HAL_Init
-                0x0000000008001c40       0x34 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
-                0x0000000008001c40                HAL_Init
+                0x0000000008001c3c       0x34 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+                0x0000000008001c3c                HAL_Init
  .text.HAL_IncTick
-                0x0000000008001c74       0x18 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
-                0x0000000008001c74                HAL_IncTick
+                0x0000000008001c70       0x18 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+                0x0000000008001c70                HAL_IncTick
  .text.HAL_GetTick
-                0x0000000008001c8c        0xc CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
-                0x0000000008001c8c                HAL_GetTick
+                0x0000000008001c88        0xc CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+                0x0000000008001c88                HAL_GetTick
  .text.HAL_Delay
-                0x0000000008001c98       0x28 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
-                0x0000000008001c98                HAL_Delay
+                0x0000000008001c94       0x28 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+                0x0000000008001c94                HAL_Delay
  .text.HAL_NVIC_SetPriorityGrouping
-                0x0000000008001cc0       0x24 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
-                0x0000000008001cc0                HAL_NVIC_SetPriorityGrouping
+                0x0000000008001cbc       0x24 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+                0x0000000008001cbc                HAL_NVIC_SetPriorityGrouping
  .text.HAL_NVIC_SetPriority
-                0x0000000008001ce4       0x68 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
-                0x0000000008001ce4                HAL_NVIC_SetPriority
+                0x0000000008001ce0       0x68 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+                0x0000000008001ce0                HAL_NVIC_SetPriority
  .text.HAL_NVIC_EnableIRQ
-                0x0000000008001d4c       0x1c CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
-                0x0000000008001d4c                HAL_NVIC_EnableIRQ
+                0x0000000008001d48       0x1c CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+                0x0000000008001d48                HAL_NVIC_EnableIRQ
  .text.DMA_SetConfig
-                0x0000000008001d68       0x2c CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+                0x0000000008001d64       0x2c CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
  .text.DMA_CalcBaseAndBitshift
-                0x0000000008001d94       0x3c CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+                0x0000000008001d90       0x3c CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
  .text.DMA_CheckFifoParam
-                0x0000000008001dd0       0x8e CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
- *fill*         0x0000000008001e5e        0x2 
+                0x0000000008001dcc       0x8e CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ *fill*         0x0000000008001e5a        0x2 
  .text.HAL_DMA_Init
-                0x0000000008001e60       0xcc CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
-                0x0000000008001e60                HAL_DMA_Init
+                0x0000000008001e5c       0xcc CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+                0x0000000008001e5c                HAL_DMA_Init
  .text.HAL_DMA_Start_IT
-                0x0000000008001f2c       0x6a CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
-                0x0000000008001f2c                HAL_DMA_Start_IT
+                0x0000000008001f28       0x6a CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+                0x0000000008001f28                HAL_DMA_Start_IT
  .text.HAL_DMA_Abort
-                0x0000000008001f96       0x94 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
-                0x0000000008001f96                HAL_DMA_Abort
+                0x0000000008001f92       0x94 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+                0x0000000008001f92                HAL_DMA_Abort
  .text.HAL_DMA_Abort_IT
-                0x000000000800202a       0x26 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
-                0x000000000800202a                HAL_DMA_Abort_IT
+                0x0000000008002026       0x26 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+                0x0000000008002026                HAL_DMA_Abort_IT
  .text.HAL_DMA_IRQHandler
-                0x0000000008002050      0x1dc CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
-                0x0000000008002050                HAL_DMA_IRQHandler
+                0x000000000800204c      0x1dc CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+                0x000000000800204c                HAL_DMA_IRQHandler
  .text.HAL_GPIO_Init
-                0x000000000800222c      0x1d4 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
-                0x000000000800222c                HAL_GPIO_Init
+                0x0000000008002228      0x1d4 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+                0x0000000008002228                HAL_GPIO_Init
  .text.HAL_GPIO_ReadPin
-                0x0000000008002400        0xe CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
-                0x0000000008002400                HAL_GPIO_ReadPin
+                0x00000000080023fc        0xe CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+                0x00000000080023fc                HAL_GPIO_ReadPin
  .text.HAL_GPIO_WritePin
-                0x000000000800240e        0xc CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
-                0x000000000800240e                HAL_GPIO_WritePin
- *fill*         0x000000000800241a        0x2 
+                0x000000000800240a        0xc CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+                0x000000000800240a                HAL_GPIO_WritePin
+ *fill*         0x0000000008002416        0x2 
  .text.HAL_RCC_OscConfig
-                0x000000000800241c      0x3f8 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
-                0x000000000800241c                HAL_RCC_OscConfig
+                0x0000000008002418      0x3f8 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+                0x0000000008002418                HAL_RCC_OscConfig
  .text.HAL_RCC_GetSysClockFreq
-                0x0000000008002814       0xa8 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
-                0x0000000008002814                HAL_RCC_GetSysClockFreq
+                0x0000000008002810       0xa8 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+                0x0000000008002810                HAL_RCC_GetSysClockFreq
  .text.HAL_RCC_ClockConfig
-                0x00000000080028bc      0x160 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
-                0x00000000080028bc                HAL_RCC_ClockConfig
+                0x00000000080028b8      0x160 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+                0x00000000080028b8                HAL_RCC_ClockConfig
  .text.HAL_RCC_GetHCLKFreq
-                0x0000000008002a1c        0xc CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
-                0x0000000008002a1c                HAL_RCC_GetHCLKFreq
+                0x0000000008002a18        0xc CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+                0x0000000008002a18                HAL_RCC_GetHCLKFreq
  .text.HAL_RCC_GetPCLK1Freq
-                0x0000000008002a28       0x20 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
-                0x0000000008002a28                HAL_RCC_GetPCLK1Freq
+                0x0000000008002a24       0x20 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+                0x0000000008002a24                HAL_RCC_GetPCLK1Freq
  .text.HAL_RCC_GetPCLK2Freq
-                0x0000000008002a48       0x20 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
-                0x0000000008002a48                HAL_RCC_GetPCLK2Freq
+                0x0000000008002a44       0x20 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+                0x0000000008002a44                HAL_RCC_GetPCLK2Freq
  .text.HAL_RCC_GetClockConfig
-                0x0000000008002a68       0x3c CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
-                0x0000000008002a68                HAL_RCC_GetClockConfig
+                0x0000000008002a64       0x3c CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+                0x0000000008002a64                HAL_RCC_GetClockConfig
  .text.TIM_OC1_SetConfig
-                0x0000000008002aa4       0x68 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+                0x0000000008002aa0       0x68 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
  .text.TIM_OC3_SetConfig
-                0x0000000008002b0c       0x70 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+                0x0000000008002b08       0x70 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
  .text.TIM_OC4_SetConfig
-                0x0000000008002b7c       0x50 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+                0x0000000008002b78       0x50 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
  .text.TIM_TI1_ConfigInputStage
-                0x0000000008002bcc       0x26 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+                0x0000000008002bc8       0x26 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
  .text.TIM_TI2_ConfigInputStage
-                0x0000000008002bf2       0x28 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+                0x0000000008002bee       0x28 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
  .text.TIM_ITRx_SetConfig
-                0x0000000008002c1a       0x10 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
- *fill*         0x0000000008002c2a        0x2 
+                0x0000000008002c16       0x10 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ *fill*         0x0000000008002c26        0x2 
  .text.HAL_TIM_Base_Start_IT
-                0x0000000008002c2c       0x88 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
-                0x0000000008002c2c                HAL_TIM_Base_Start_IT
+                0x0000000008002c28       0x88 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+                0x0000000008002c28                HAL_TIM_Base_Start_IT
  .text.HAL_TIM_PWM_MspInit
-                0x0000000008002cb4        0x2 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
-                0x0000000008002cb4                HAL_TIM_PWM_MspInit
+                0x0000000008002cb0        0x2 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+                0x0000000008002cb0                HAL_TIM_PWM_MspInit
  .text.HAL_TIM_OC_DelayElapsedCallback
-                0x0000000008002cb6        0x2 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
-                0x0000000008002cb6                HAL_TIM_OC_DelayElapsedCallback
+                0x0000000008002cb2        0x2 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+                0x0000000008002cb2                HAL_TIM_OC_DelayElapsedCallback
  .text.HAL_TIM_IC_CaptureCallback
-                0x0000000008002cb8        0x2 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
-                0x0000000008002cb8                HAL_TIM_IC_CaptureCallback
+                0x0000000008002cb4        0x2 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+                0x0000000008002cb4                HAL_TIM_IC_CaptureCallback
  .text.HAL_TIM_PWM_PulseFinishedCallback
-                0x0000000008002cba        0x2 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
-                0x0000000008002cba                HAL_TIM_PWM_PulseFinishedCallback
+                0x0000000008002cb6        0x2 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+                0x0000000008002cb6                HAL_TIM_PWM_PulseFinishedCallback
  .text.HAL_TIM_TriggerCallback
-                0x0000000008002cbc        0x2 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
-                0x0000000008002cbc                HAL_TIM_TriggerCallback
+                0x0000000008002cb8        0x2 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+                0x0000000008002cb8                HAL_TIM_TriggerCallback
  .text.HAL_TIM_IRQHandler
-                0x0000000008002cbe      0x17a CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
-                0x0000000008002cbe                HAL_TIM_IRQHandler
+                0x0000000008002cba      0x17a CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+                0x0000000008002cba                HAL_TIM_IRQHandler
  .text.TIM_Base_SetConfig
-                0x0000000008002e38       0xc8 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
-                0x0000000008002e38                TIM_Base_SetConfig
+                0x0000000008002e34       0xc8 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+                0x0000000008002e34                TIM_Base_SetConfig
  .text.HAL_TIM_Base_Init
-                0x0000000008002f00       0x56 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
-                0x0000000008002f00                HAL_TIM_Base_Init
+                0x0000000008002efc       0x56 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+                0x0000000008002efc                HAL_TIM_Base_Init
  .text.HAL_TIM_PWM_Init
-                0x0000000008002f56       0x56 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
-                0x0000000008002f56                HAL_TIM_PWM_Init
+                0x0000000008002f52       0x56 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+                0x0000000008002f52                HAL_TIM_PWM_Init
  .text.TIM_OC2_SetConfig
-                0x0000000008002fac       0x70 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
-                0x0000000008002fac                TIM_OC2_SetConfig
+                0x0000000008002fa8       0x70 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+                0x0000000008002fa8                TIM_OC2_SetConfig
  .text.HAL_TIM_PWM_ConfigChannel
-                0x000000000800301c       0xd0 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
-                0x000000000800301c                HAL_TIM_PWM_ConfigChannel
+                0x0000000008003018       0xd0 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+                0x0000000008003018                HAL_TIM_PWM_ConfigChannel
  .text.TIM_ETR_SetConfig
-                0x00000000080030ec       0x18 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
-                0x00000000080030ec                TIM_ETR_SetConfig
+                0x00000000080030e8       0x18 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+                0x00000000080030e8                TIM_ETR_SetConfig
  .text.HAL_TIM_ConfigClockSource
-                0x0000000008003104       0xda CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
-                0x0000000008003104                HAL_TIM_ConfigClockSource
- *fill*         0x00000000080031de        0x2 
+                0x0000000008003100       0xda CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+                0x0000000008003100                HAL_TIM_ConfigClockSource
+ *fill*         0x00000000080031da        0x2 
  .text.HAL_TIMEx_MasterConfigSynchronization
-                0x00000000080031e0       0x88 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
-                0x00000000080031e0                HAL_TIMEx_MasterConfigSynchronization
+                0x00000000080031dc       0x88 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+                0x00000000080031dc                HAL_TIMEx_MasterConfigSynchronization
  .text.HAL_TIMEx_ConfigBreakDeadTime
-                0x0000000008003268       0x52 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
-                0x0000000008003268                HAL_TIMEx_ConfigBreakDeadTime
+                0x0000000008003264       0x52 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+                0x0000000008003264                HAL_TIMEx_ConfigBreakDeadTime
  .text.HAL_TIMEx_CommutCallback
-                0x00000000080032ba        0x2 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
-                0x00000000080032ba                HAL_TIMEx_CommutCallback
+                0x00000000080032b6        0x2 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+                0x00000000080032b6                HAL_TIMEx_CommutCallback
  .text.HAL_TIMEx_BreakCallback
-                0x00000000080032bc        0x2 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
-                0x00000000080032bc                HAL_TIMEx_BreakCallback
+                0x00000000080032b8        0x2 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+                0x00000000080032b8                HAL_TIMEx_BreakCallback
  .text.UART_EndTxTransfer
-                0x00000000080032be       0x12 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x00000000080032ba       0x12 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
  .text.UART_EndRxTransfer
-                0x00000000080032d0       0x32 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x00000000080032cc       0x32 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
  .text.UART_Transmit_IT
-                0x0000000008003302       0x62 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x00000000080032fe       0x62 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
  .text.UART_SetConfig
-                0x0000000008003364      0x134 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x0000000008003360      0x134 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
  .text.HAL_UART_Init
-                0x0000000008003498       0x5e CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
-                0x0000000008003498                HAL_UART_Init
- *fill*         0x00000000080034f6        0x2 
+                0x0000000008003494       0x5e CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x0000000008003494                HAL_UART_Init
+ *fill*         0x00000000080034f2        0x2 
  .text.HAL_UART_Transmit_DMA
-                0x00000000080034f8       0x8c CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
-                0x00000000080034f8                HAL_UART_Transmit_DMA
+                0x00000000080034f4       0x8c CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x00000000080034f4                HAL_UART_Transmit_DMA
  .text.HAL_UART_TxCpltCallback
-                0x0000000008003584        0x2 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
-                0x0000000008003584                HAL_UART_TxCpltCallback
+                0x0000000008003580        0x2 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x0000000008003580                HAL_UART_TxCpltCallback
  .text.UART_DMATransmitCplt
-                0x0000000008003586       0x30 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x0000000008003582       0x30 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
  .text.UART_EndTransmit_IT
-                0x00000000080035b6       0x1a CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x00000000080035b2       0x1a CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
  .text.HAL_UART_TxHalfCpltCallback
-                0x00000000080035d0        0x2 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
-                0x00000000080035d0                HAL_UART_TxHalfCpltCallback
+                0x00000000080035cc        0x2 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x00000000080035cc                HAL_UART_TxHalfCpltCallback
  .text.UART_DMATxHalfCplt
-                0x00000000080035d2        0xa CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x00000000080035ce        0xa CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
  .text.HAL_UART_RxCpltCallback
-                0x00000000080035dc        0x2 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
-                0x00000000080035dc                HAL_UART_RxCpltCallback
+                0x00000000080035d8        0x2 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x00000000080035d8                HAL_UART_RxCpltCallback
  .text.HAL_UART_ErrorCallback
-                0x00000000080035de        0x2 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
-                0x00000000080035de                HAL_UART_ErrorCallback
+                0x00000000080035da        0x2 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x00000000080035da                HAL_UART_ErrorCallback
  .text.UART_DMAError
-                0x00000000080035e0       0x58 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x00000000080035dc       0x58 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
  .text.UART_DMAAbortOnError
-                0x0000000008003638       0x10 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x0000000008003634       0x10 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
  .text.HAL_UARTEx_RxEventCallback
-                0x0000000008003648        0x2 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
-                0x0000000008003648                HAL_UARTEx_RxEventCallback
+                0x0000000008003644        0x2 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x0000000008003644                HAL_UARTEx_RxEventCallback
  .text.UART_Receive_IT
-                0x000000000800364a       0xb4 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
- *fill*         0x00000000080036fe        0x2 
+                0x0000000008003646       0xb4 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+ *fill*         0x00000000080036fa        0x2 
  .text.HAL_UART_IRQHandler
-                0x0000000008003700      0x1f8 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
-                0x0000000008003700                HAL_UART_IRQHandler
+                0x00000000080036fc      0x1f8 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x00000000080036fc                HAL_UART_IRQHandler
  .text.makeFreeRtosPriority
-                0x00000000080038f8        0xc CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj
+                0x00000000080038f4        0xc CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj
  .text.osKernelStart
-                0x0000000008003904        0xa CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj
-                0x0000000008003904                osKernelStart
+                0x0000000008003900        0xa CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj
+                0x0000000008003900                osKernelStart
  .text.osThreadCreate
-                0x000000000800390e       0x6c CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj
-                0x000000000800390e                osThreadCreate
- .text.osDelay  0x000000000800397a       0x12 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj
-                0x000000000800397a                osDelay
+                0x000000000800390a       0x6c CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj
+                0x000000000800390a                osThreadCreate
+ .text.osDelay  0x0000000008003976       0x12 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj
+                0x0000000008003976                osDelay
  .text.vListInitialise
-                0x000000000800398c       0x16 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
-                0x000000000800398c                vListInitialise
+                0x0000000008003988       0x16 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
+                0x0000000008003988                vListInitialise
  .text.vListInitialiseItem
-                0x00000000080039a2        0x6 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
-                0x00000000080039a2                vListInitialiseItem
+                0x000000000800399e        0x6 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
+                0x000000000800399e                vListInitialiseItem
  .text.vListInsertEnd
-                0x00000000080039a8       0x18 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
-                0x00000000080039a8                vListInsertEnd
+                0x00000000080039a4       0x18 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
+                0x00000000080039a4                vListInsertEnd
  .text.vListInsert
-                0x00000000080039c0       0x34 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
-                0x00000000080039c0                vListInsert
+                0x00000000080039bc       0x34 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
+                0x00000000080039bc                vListInsert
  .text.uxListRemove
-                0x00000000080039f4       0x28 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
-                0x00000000080039f4                uxListRemove
+                0x00000000080039f0       0x28 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
+                0x00000000080039f0                uxListRemove
  .text.prvTaskExitError
-                0x0000000008003a1c       0x40 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
+                0x0000000008003a18       0x40 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
  .text.prvPortStartFirstTask
-                0x0000000008003a5c       0x28 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
+                0x0000000008003a58       0x28 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
  .text.vPortEnableVFP
-                0x0000000008003a84       0x14 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
+                0x0000000008003a80       0x14 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
  .text.pxPortInitialiseStack
-                0x0000000008003a98       0x2c CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
-                0x0000000008003a98                pxPortInitialiseStack
- *fill*         0x0000000008003ac4        0xc 
+                0x0000000008003a94       0x2c CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
+                0x0000000008003a94                pxPortInitialiseStack
  .text.SVC_Handler
-                0x0000000008003ad0       0x24 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
-                0x0000000008003ad0                SVC_Handler
+                0x0000000008003ac0       0x24 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
+                0x0000000008003ac0                SVC_Handler
  .text.vPortEnterCritical
-                0x0000000008003af4       0x44 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
-                0x0000000008003af4                vPortEnterCritical
+                0x0000000008003ae4       0x44 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
+                0x0000000008003ae4                vPortEnterCritical
  .text.vPortExitCritical
-                0x0000000008003b38       0x2c CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
-                0x0000000008003b38                vPortExitCritical
- *fill*         0x0000000008003b64        0xc 
+                0x0000000008003b28       0x2c CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
+                0x0000000008003b28                vPortExitCritical
+ *fill*         0x0000000008003b54        0xc 
  .text.PendSV_Handler
-                0x0000000008003b70       0x64 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
-                0x0000000008003b70                PendSV_Handler
+                0x0000000008003b60       0x64 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
+                0x0000000008003b60                PendSV_Handler
  .text.SysTick_Handler
-                0x0000000008003bd4       0x2c CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
-                0x0000000008003bd4                SysTick_Handler
+                0x0000000008003bc4       0x2c CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
+                0x0000000008003bc4                SysTick_Handler
  .text.vPortSetupTimerInterrupt
-                0x0000000008003c00       0x38 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
-                0x0000000008003c00                vPortSetupTimerInterrupt
+                0x0000000008003bf0       0x38 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
+                0x0000000008003bf0                vPortSetupTimerInterrupt
  .text.xPortStartScheduler
-                0x0000000008003c38      0x110 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
-                0x0000000008003c38                xPortStartScheduler
+                0x0000000008003c28      0x110 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
+                0x0000000008003c28                xPortStartScheduler
  .text.prvHeapInit
-                0x0000000008003d48       0x64 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
+                0x0000000008003d38       0x64 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
  .text.prvInsertBlockIntoFreeList
-                0x0000000008003dac       0x58 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
+                0x0000000008003d9c       0x58 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
  .text.pvPortMalloc
-                0x0000000008003e04      0x114 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
-                0x0000000008003e04                pvPortMalloc
+                0x0000000008003df4      0x114 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
+                0x0000000008003df4                pvPortMalloc
  .text.vPortFree
-                0x0000000008003f18       0x7c CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
-                0x0000000008003f18                vPortFree
+                0x0000000008003f08       0x7c CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
+                0x0000000008003f08                vPortFree
  .text.prvResetNextTaskUnblockTime
-                0x0000000008003f94       0x2c CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x0000000008003f84       0x2c CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
  .text.prvInitialiseNewTask
-                0x0000000008003fc0       0x8c CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x0000000008003fb0       0x8c CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
  .text.prvInitialiseTaskLists
-                0x000000000800404c       0x68 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x000000000800403c       0x68 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
  .text.prvAddNewTaskToReadyList
-                0x00000000080040b4       0xa8 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x00000000080040a4       0xa8 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
  .text.prvDeleteTCB
-                0x000000000800415c       0x38 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x000000000800414c       0x38 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
  .text.prvCheckTasksWaitingTermination
-                0x0000000008004194       0x4c CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x0000000008004184       0x4c CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
  .text.prvIdleTask
-                0x00000000080041e0       0x28 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x00000000080041d0       0x28 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
  .text.prvAddCurrentTaskToDelayedList
-                0x0000000008004208       0x98 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x00000000080041f8       0x98 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
  .text.xTaskCreateStatic
-                0x00000000080042a0       0x74 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
-                0x00000000080042a0                xTaskCreateStatic
+                0x0000000008004290       0x74 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x0000000008004290                xTaskCreateStatic
  .text.xTaskCreate
-                0x0000000008004314       0x66 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
-                0x0000000008004314                xTaskCreate
- *fill*         0x000000000800437a        0x2 
+                0x0000000008004304       0x66 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x0000000008004304                xTaskCreate
+ *fill*         0x000000000800436a        0x2 
  .text.vTaskStartScheduler
-                0x000000000800437c       0x6c CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
-                0x000000000800437c                vTaskStartScheduler
+                0x000000000800436c       0x6c CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x000000000800436c                vTaskStartScheduler
  .text.vTaskSuspendAll
-                0x00000000080043e8       0x10 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
-                0x00000000080043e8                vTaskSuspendAll
+                0x00000000080043d8       0x10 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x00000000080043d8                vTaskSuspendAll
  .text.xTaskIncrementTick
-                0x00000000080043f8      0x118 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
-                0x00000000080043f8                xTaskIncrementTick
+                0x00000000080043e8      0x118 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x00000000080043e8                xTaskIncrementTick
  .text.xTaskResumeAll
-                0x0000000008004510       0xf4 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
-                0x0000000008004510                xTaskResumeAll
+                0x0000000008004500       0xf4 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x0000000008004500                xTaskResumeAll
  .text.vTaskDelay
-                0x0000000008004604       0x4c CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
-                0x0000000008004604                vTaskDelay
+                0x00000000080045f4       0x4c CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x00000000080045f4                vTaskDelay
  .text.vTaskSwitchContext
-                0x0000000008004650       0x98 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
-                0x0000000008004650                vTaskSwitchContext
+                0x0000000008004640       0x98 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x0000000008004640                vTaskSwitchContext
  .text.delay_us
-                0x00000000080046e8       0x3c CMakeFiles/Joint_Clion.elf.dir/bsp/delay.c.obj
-                0x00000000080046e8                delay_us
+                0x00000000080046d8       0x3c CMakeFiles/Joint_Clion.elf.dir/bsp/delay.c.obj
+                0x00000000080046d8                delay_us
  .text.IIC_Delay
-                0x0000000008004724        0xa CMakeFiles/Joint_Clion.elf.dir/bsp/myiic.c.obj
-                0x0000000008004724                IIC_Delay
- *fill*         0x000000000800472e        0x2 
+                0x0000000008004714        0xa CMakeFiles/Joint_Clion.elf.dir/bsp/myiic.c.obj
+                0x0000000008004714                IIC_Delay
+ *fill*         0x000000000800471e        0x2 
  .text.IIC_Start
-                0x0000000008004730       0x3c CMakeFiles/Joint_Clion.elf.dir/bsp/myiic.c.obj
-                0x0000000008004730                IIC_Start
+                0x0000000008004720       0x3c CMakeFiles/Joint_Clion.elf.dir/bsp/myiic.c.obj
+                0x0000000008004720                IIC_Start
  .text.IIC_Stop
-                0x000000000800476c       0x3c CMakeFiles/Joint_Clion.elf.dir/bsp/myiic.c.obj
-                0x000000000800476c                IIC_Stop
+                0x000000000800475c       0x3c CMakeFiles/Joint_Clion.elf.dir/bsp/myiic.c.obj
+                0x000000000800475c                IIC_Stop
  .text.IIC_Init
-                0x00000000080047a8       0x4c CMakeFiles/Joint_Clion.elf.dir/bsp/myiic.c.obj
-                0x00000000080047a8                IIC_Init
+                0x0000000008004798       0x5c CMakeFiles/Joint_Clion.elf.dir/bsp/myiic.c.obj
+                0x0000000008004798                IIC_Init
  .text.IIC_Wait_Ack
                 0x00000000080047f4       0x50 CMakeFiles/Joint_Clion.elf.dir/bsp/myiic.c.obj
                 0x00000000080047f4                IIC_Wait_Ack
@@ -2409,172 +2412,169 @@ LOAD /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.
                 0x00000000080049ba       0x44 CMakeFiles/Joint_Clion.elf.dir/bsp/myiic.c.obj
                 0x00000000080049ba                IIC_Read_One_Byte
  *fill*         0x00000000080049fe        0x2 
- .text.PCA9685_Init
+ .text.PCA9685_Restart
                 0x0000000008004a00       0x78 CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.obj
-                0x0000000008004a00                PCA9685_Init
+                0x0000000008004a00                PCA9685_Restart
  .text.PCA9685_SoftWareReset
-                0x0000000008004a78       0x38 CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.obj
+                0x0000000008004a78       0x3c CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.obj
                 0x0000000008004a78                PCA9685_SoftWareReset
- .text.PCA9685_setAutoIncrement
-                0x0000000008004ab0       0x50 CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.obj
-                0x0000000008004ab0                PCA9685_setAutoIncrement
- .text.abort    0x0000000008004b00       0x10 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-abort.o)
-                0x0000000008004b00                abort
- .text.__errno  0x0000000008004b10        0xc /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-errno.o)
-                0x0000000008004b10                __errno
+ .text.abort    0x0000000008004ab4       0x10 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-abort.o)
+                0x0000000008004ab4                abort
+ .text.__errno  0x0000000008004ac4        0xc /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-errno.o)
+                0x0000000008004ac4                __errno
  .text.__libc_init_array
-                0x0000000008004b1c       0x48 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-init.o)
-                0x0000000008004b1c                __libc_init_array
- .text.malloc   0x0000000008004b64       0x10 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-malloc.o)
-                0x0000000008004b64                malloc
+                0x0000000008004ad0       0x48 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-init.o)
+                0x0000000008004ad0                __libc_init_array
+ .text.malloc   0x0000000008004b18       0x10 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-malloc.o)
+                0x0000000008004b18                malloc
  .text._malloc_r
-                0x0000000008004b74      0x548 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-mallocr.o)
-                0x0000000008004b74                _malloc_r
- .text.memset   0x00000000080050bc       0x94 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-memset.o)
-                0x00000000080050bc                memset
+                0x0000000008004b28      0x548 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-mallocr.o)
+                0x0000000008004b28                _malloc_r
+ .text.memset   0x0000000008005070       0x94 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-memset.o)
+                0x0000000008005070                memset
  .text.__malloc_lock
-                0x0000000008005150        0xc /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-mlock.o)
-                0x0000000008005150                __malloc_lock
+                0x0000000008005104        0xc /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-mlock.o)
+                0x0000000008005104                __malloc_lock
  .text.__malloc_unlock
-                0x000000000800515c        0xc /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-mlock.o)
-                0x000000000800515c                __malloc_unlock
- .text._sbrk_r  0x0000000008005168       0x24 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-sbrkr.o)
-                0x0000000008005168                _sbrk_r
+                0x0000000008005110        0xc /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-mlock.o)
+                0x0000000008005110                __malloc_unlock
+ .text._sbrk_r  0x000000000800511c       0x24 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-sbrkr.o)
+                0x000000000800511c                _sbrk_r
  .text._raise_r
-                0x000000000800518c       0x58 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-signal.o)
-                0x000000000800518c                _raise_r
- .text.raise    0x00000000080051e4       0x10 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-signal.o)
-                0x00000000080051e4                raise
- .text._kill_r  0x00000000080051f4       0x28 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-signalr.o)
-                0x00000000080051f4                _kill_r
+                0x0000000008005140       0x58 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-signal.o)
+                0x0000000008005140                _raise_r
+ .text.raise    0x0000000008005198       0x10 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-signal.o)
+                0x0000000008005198                raise
+ .text._kill_r  0x00000000080051a8       0x28 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-signalr.o)
+                0x00000000080051a8                _kill_r
  .text._getpid_r
-                0x000000000800521c        0x4 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-signalr.o)
-                0x000000000800521c                _getpid_r
+                0x00000000080051d0        0x4 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-signalr.o)
+                0x00000000080051d0                _getpid_r
  .text.startup.register_fini
-                0x0000000008005220       0x14 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-__call_atexit.o)
- .text.atexit   0x0000000008005234        0xc /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-atexit.o)
-                0x0000000008005234                atexit
+                0x00000000080051d4       0x14 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-__call_atexit.o)
+ .text.atexit   0x00000000080051e8        0xc /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-atexit.o)
+                0x00000000080051e8                atexit
  .text.__libc_fini_array
-                0x0000000008005240       0x34 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-fini.o)
-                0x0000000008005240                __libc_fini_array
+                0x00000000080051f4       0x34 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-fini.o)
+                0x00000000080051f4                __libc_fini_array
  .text._malloc_trim_r
-                0x0000000008005274       0xa0 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-freer.o)
-                0x0000000008005274                _malloc_trim_r
- .text._free_r  0x0000000008005314      0x1e8 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-freer.o)
-                0x0000000008005314                _free_r
+                0x0000000008005228       0xa0 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-freer.o)
+                0x0000000008005228                _malloc_trim_r
+ .text._free_r  0x00000000080052c8      0x1e8 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-freer.o)
+                0x00000000080052c8                _free_r
  .text.__retarget_lock_acquire_recursive
-                0x00000000080054fc        0x4 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-lock.o)
-                0x00000000080054fc                __retarget_lock_acquire_recursive
+                0x00000000080054b0        0x4 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-lock.o)
+                0x00000000080054b0                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x0000000008005500        0x4 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-lock.o)
-                0x0000000008005500                __retarget_lock_release_recursive
+                0x00000000080054b4        0x4 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-lock.o)
+                0x00000000080054b4                __retarget_lock_release_recursive
  .text.__register_exitproc
-                0x0000000008005504       0xc0 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-__atexit.o)
-                0x0000000008005504                __register_exitproc
+                0x00000000080054b8       0xc0 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-__atexit.o)
+                0x00000000080054b8                __register_exitproc
  *(.glue_7)
- .glue_7        0x00000000080055c4        0x0 linker stubs
+ .glue_7        0x0000000008005578        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x00000000080055c4        0x0 linker stubs
+ .glue_7t       0x0000000008005578        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x00000000080055c4        0x0 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+ .eh_frame      0x0000000008005578        0x0 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
  *(.init)
- .init          0x00000000080055c4        0x4 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crti.o
-                0x00000000080055c4                _init
- .init          0x00000000080055c8        0x8 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
+ .init          0x0000000008005578        0x4 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crti.o
+                0x0000000008005578                _init
+ .init          0x000000000800557c        0x8 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
  *(.fini)
- .fini          0x00000000080055d0        0x4 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crti.o
-                0x00000000080055d0                _fini
- .fini          0x00000000080055d4        0x8 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
-                0x00000000080055dc                . = ALIGN (0x4)
-                0x00000000080055dc                _etext = .
+ .fini          0x0000000008005584        0x4 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crti.o
+                0x0000000008005584                _fini
+ .fini          0x0000000008005588        0x8 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
+                0x0000000008005590                . = ALIGN (0x4)
+                0x0000000008005590                _etext = .
 
-.vfp11_veneer   0x00000000080055dc        0x0
- .vfp11_veneer  0x00000000080055dc        0x0 linker stubs
+.vfp11_veneer   0x0000000008005590        0x0
+ .vfp11_veneer  0x0000000008005590        0x0 linker stubs
 
-.v4_bx          0x00000000080055dc        0x0
- .v4_bx         0x00000000080055dc        0x0 linker stubs
+.v4_bx          0x0000000008005590        0x0
+ .v4_bx         0x0000000008005590        0x0 linker stubs
 
-.iplt           0x00000000080055dc        0x0
- .iplt          0x00000000080055dc        0x0 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+.iplt           0x0000000008005590        0x0
+ .iplt          0x0000000008005590        0x0 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
 
-.rodata         0x00000000080055dc       0x78
-                0x00000000080055dc                . = ALIGN (0x4)
+.rodata         0x0000000008005590       0x78
+                0x0000000008005590                . = ALIGN (0x4)
  *(.rodata)
- .rodata        0x00000000080055dc       0x38 CMakeFiles/Joint_Clion.elf.dir/Core/Src/freertos.c.obj
+ .rodata        0x0000000008005590       0x38 CMakeFiles/Joint_Clion.elf.dir/Core/Src/freertos.c.obj
  *(.rodata*)
  .rodata.str1.4
-                0x0000000008005614       0x14 CMakeFiles/Joint_Clion.elf.dir/Core/Src/freertos.c.obj
+                0x00000000080055c8       0x14 CMakeFiles/Joint_Clion.elf.dir/Core/Src/freertos.c.obj
  .rodata.AHBPrescTable
-                0x0000000008005628       0x10 CMakeFiles/Joint_Clion.elf.dir/Core/Src/system_stm32f4xx.c.obj
-                0x0000000008005628                AHBPrescTable
+                0x00000000080055dc       0x10 CMakeFiles/Joint_Clion.elf.dir/Core/Src/system_stm32f4xx.c.obj
+                0x00000000080055dc                AHBPrescTable
  .rodata.APBPrescTable
-                0x0000000008005638        0x8 CMakeFiles/Joint_Clion.elf.dir/Core/Src/system_stm32f4xx.c.obj
-                0x0000000008005638                APBPrescTable
+                0x00000000080055ec        0x8 CMakeFiles/Joint_Clion.elf.dir/Core/Src/system_stm32f4xx.c.obj
+                0x00000000080055ec                APBPrescTable
  .rodata.flagBitshiftOffset.8181
-                0x0000000008005640        0x8 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+                0x00000000080055f4        0x8 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
  .rodata.vTaskStartScheduler.str1.4
-                0x0000000008005648        0x8 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x00000000080055fc        0x8 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
                                           0x5 (size before relaxing)
  .rodata._global_impure_ptr
-                0x0000000008005650        0x4 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-impure.o)
-                0x0000000008005650                _global_impure_ptr
-                0x0000000008005654                . = ALIGN (0x4)
+                0x0000000008005604        0x4 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-impure.o)
+                0x0000000008005604                _global_impure_ptr
+                0x0000000008005608                . = ALIGN (0x4)
 
-.ARM.extab      0x0000000008005654       0x24
-                0x0000000008005654                . = ALIGN (0x4)
+.ARM.extab      0x0000000008005608       0x24
+                0x0000000008005608                . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
  .ARM.extab.text.Joint_Task
-                0x0000000008005654        0xc CMakeFiles/Joint_Clion.elf.dir/Applications/Joint_Task.cpp.obj
- .ARM.extab     0x0000000008005660       0x18 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(pr-support.o)
-                0x0000000008005678                . = ALIGN (0x4)
+                0x0000000008005608        0xc CMakeFiles/Joint_Clion.elf.dir/Applications/Joint_Task.cpp.obj
+ .ARM.extab     0x0000000008005614       0x18 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(pr-support.o)
+                0x000000000800562c                . = ALIGN (0x4)
 
-.ARM            0x0000000008005678       0xc8
-                0x0000000008005678                . = ALIGN (0x4)
-                0x0000000008005678                __exidx_start = .
+.ARM            0x000000000800562c       0xc8
+                0x000000000800562c                . = ALIGN (0x4)
+                0x000000000800562c                __exidx_start = .
  *(.ARM.exidx*)
  .ARM.exidx.text.Joint_Task
-                0x0000000008005730       0x10 CMakeFiles/Joint_Clion.elf.dir/Applications/Joint_Task.cpp.obj
+                0x00000000080056e4       0x10 CMakeFiles/Joint_Clion.elf.dir/Applications/Joint_Task.cpp.obj
                                           0x8 (size before relaxing)
- .ARM.exidx     0x0000000008005678        0x8 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_udivmoddi4.o)
- .ARM.exidx     0x0000000008005680       0x78 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(unwind-arm.o)
+ .ARM.exidx     0x000000000800562c        0x8 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_udivmoddi4.o)
+ .ARM.exidx     0x0000000008005634       0x78 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(unwind-arm.o)
                                          0xd8 (size before relaxing)
- .ARM.exidx     0x00000000080056f8       0x38 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(pr-support.o)
+ .ARM.exidx     0x00000000080056ac       0x38 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(pr-support.o)
                                          0x48 (size before relaxing)
-                0x0000000008005740                __exidx_end = .
-                0x0000000008005740                . = ALIGN (0x4)
+                0x00000000080056f4                __exidx_end = .
+                0x00000000080056f4                . = ALIGN (0x4)
 
-.rel.dyn        0x0000000008005740        0x0
- .rel.iplt      0x0000000008005740        0x0 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+.rel.dyn        0x00000000080056f4        0x0
+ .rel.iplt      0x00000000080056f4        0x0 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
 
-.preinit_array  0x0000000008005740        0x0
-                0x0000000008005740                . = ALIGN (0x4)
-                0x0000000008005740                PROVIDE (__preinit_array_start, .)
+.preinit_array  0x00000000080056f4        0x0
+                0x00000000080056f4                . = ALIGN (0x4)
+                0x00000000080056f4                PROVIDE (__preinit_array_start, .)
  *(.preinit_array*)
-                0x0000000008005740                PROVIDE (__preinit_array_end, .)
-                0x0000000008005740                . = ALIGN (0x4)
+                0x00000000080056f4                PROVIDE (__preinit_array_end, .)
+                0x00000000080056f4                . = ALIGN (0x4)
 
-.init_array     0x0000000008005740        0x8
-                0x0000000008005740                . = ALIGN (0x4)
-                0x0000000008005740                PROVIDE (__init_array_start, .)
+.init_array     0x00000000080056f4        0x8
+                0x00000000080056f4                . = ALIGN (0x4)
+                0x00000000080056f4                PROVIDE (__init_array_start, .)
  *(SORT_BY_NAME(.init_array.*))
  .init_array.00000
-                0x0000000008005740        0x4 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-__call_atexit.o)
+                0x00000000080056f4        0x4 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-__call_atexit.o)
  *(.init_array*)
- .init_array    0x0000000008005744        0x4 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
-                0x0000000008005748                PROVIDE (__init_array_end, .)
-                0x0000000008005748                . = ALIGN (0x4)
+ .init_array    0x00000000080056f8        0x4 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+                0x00000000080056fc                PROVIDE (__init_array_end, .)
+                0x00000000080056fc                . = ALIGN (0x4)
 
-.fini_array     0x0000000008005748        0x4
-                0x0000000008005748                . = ALIGN (0x4)
-                0x0000000008005748                PROVIDE (__fini_array_start, .)
+.fini_array     0x00000000080056fc        0x4
+                0x00000000080056fc                . = ALIGN (0x4)
+                0x00000000080056fc                PROVIDE (__fini_array_start, .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x0000000008005748        0x4 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
-                0x000000000800574c                PROVIDE (__fini_array_end, .)
-                0x000000000800574c                . = ALIGN (0x4)
-                0x000000000800574c                _sidata = LOADADDR (.data)
+ .fini_array    0x00000000080056fc        0x4 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+                0x0000000008005700                PROVIDE (__fini_array_end, .)
+                0x0000000008005700                . = ALIGN (0x4)
+                0x0000000008005700                _sidata = LOADADDR (.data)
 
-.data           0x0000000020000000      0x854 load address 0x000000000800574c
+.data           0x0000000020000000      0x854 load address 0x0000000008005700
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _sdata = .
  *(.data)
@@ -2614,11 +2614,11 @@ LOAD /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.
                 0x0000000020000854                . = ALIGN (0x4)
                 0x0000000020000854                _edata = .
 
-.igot.plt       0x0000000020000854        0x0 load address 0x0000000008005fa0
+.igot.plt       0x0000000020000854        0x0 load address 0x0000000008005f54
  .igot.plt      0x0000000020000854        0x0 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
                 0x0000000020000854                . = ALIGN (0x4)
 
-.bss            0x0000000020000854     0x41c4 load address 0x0000000008005fa0
+.bss            0x0000000020000854     0x41c4 load address 0x0000000008005f54
                 0x0000000020000854                _sbss = .
                 0x0000000020000854                __bss_start__ = _sbss
  *(.bss)
@@ -2710,7 +2710,9 @@ LOAD /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.
  .bss.xYieldPending
                 0x00000000200049b4        0x4 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
  .bss.fac_us    0x00000000200049b8        0x1 CMakeFiles/Joint_Clion.elf.dir/bsp/delay.c.obj
- *fill*         0x00000000200049b9        0x3 
+ .bss.IIC_InitDone
+                0x00000000200049b9        0x1 CMakeFiles/Joint_Clion.elf.dir/bsp/myiic.c.obj
+ *fill*         0x00000000200049ba        0x2 
  .bss.__malloc_current_mallinfo
                 0x00000000200049bc       0x28 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-mallocr.o)
                 0x00000000200049bc                __malloc_current_mallinfo
@@ -2742,7 +2744,7 @@ LOAD /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.
                 0x0000000020004a18                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x0000000020004a18      0x600 load address 0x0000000008005fa0
+                0x0000000020004a18      0x600 load address 0x0000000008005f54
                 0x0000000020004a18                . = ALIGN (0x8)
                 [!provide]                        PROVIDE (end, .)
                 0x0000000020004a18                PROVIDE (_end, .)
@@ -2862,38 +2864,38 @@ LOAD /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.
                 0x0000000000000a37       0x22 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
 OUTPUT(Joint_Clion.elf elf32-littlearm)
 
-.debug_info     0x0000000000000000    0x1a108
- .debug_info    0x0000000000000000      0xaf8 CMakeFiles/Joint_Clion.elf.dir/Applications/Joint_Task.cpp.obj
- .debug_info    0x0000000000000af8      0x5e8 CMakeFiles/Joint_Clion.elf.dir/Core/Src/dma.c.obj
- .debug_info    0x00000000000010e0      0x55f CMakeFiles/Joint_Clion.elf.dir/Core/Src/freertos.c.obj
- .debug_info    0x000000000000163f      0x519 CMakeFiles/Joint_Clion.elf.dir/Core/Src/gpio.c.obj
- .debug_info    0x0000000000001b58      0xe3a CMakeFiles/Joint_Clion.elf.dir/Core/Src/main.c.obj
- .debug_info    0x0000000000002992      0x5b0 CMakeFiles/Joint_Clion.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
- .debug_info    0x0000000000002f42      0xc9b CMakeFiles/Joint_Clion.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj
- .debug_info    0x0000000000003bdd      0xa40 CMakeFiles/Joint_Clion.elf.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_info    0x000000000000461d      0x9a1 CMakeFiles/Joint_Clion.elf.dir/Core/Src/sysmem.c.obj
- .debug_info    0x0000000000004fbe      0x555 CMakeFiles/Joint_Clion.elf.dir/Core/Src/system_stm32f4xx.c.obj
- .debug_info    0x0000000000005513     0x1041 CMakeFiles/Joint_Clion.elf.dir/Core/Src/tim.c.obj
- .debug_info    0x0000000000006554      0xd62 CMakeFiles/Joint_Clion.elf.dir/Core/Src/usart.c.obj
- .debug_info    0x00000000000072b6       0x22 CMakeFiles/Joint_Clion.elf.dir/Core/Startup/startup_stm32f407ighx.s.obj
- .debug_info    0x00000000000072d8      0x9ed CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
- .debug_info    0x0000000000007cc5      0xf88 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
- .debug_info    0x0000000000008c4d      0xaa9 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
- .debug_info    0x00000000000096f6      0x7cc CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
- .debug_info    0x0000000000009ec2      0xa90 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
- .debug_info    0x000000000000a952     0x359a CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
- .debug_info    0x000000000000deec     0x180b CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
- .debug_info    0x000000000000f6f7     0x1a81 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
- .debug_info    0x0000000000011178     0x2862 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj
- .debug_info    0x00000000000139da      0xad4 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
- .debug_info    0x00000000000144ae      0x56b CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
- .debug_info    0x0000000000014a19      0xdad CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
- .debug_info    0x00000000000157c6     0x310c CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
- .debug_info    0x00000000000188d2      0x2e5 CMakeFiles/Joint_Clion.elf.dir/bsp/delay.c.obj
- .debug_info    0x0000000000018bb7      0xc16 CMakeFiles/Joint_Clion.elf.dir/bsp/myiic.c.obj
- .debug_info    0x00000000000197cd      0x93b CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.obj
+.debug_info     0x0000000000000000    0x1a16f
+ .debug_info    0x0000000000000000      0xae4 CMakeFiles/Joint_Clion.elf.dir/Applications/Joint_Task.cpp.obj
+ .debug_info    0x0000000000000ae4      0x5e8 CMakeFiles/Joint_Clion.elf.dir/Core/Src/dma.c.obj
+ .debug_info    0x00000000000010cc      0x55f CMakeFiles/Joint_Clion.elf.dir/Core/Src/freertos.c.obj
+ .debug_info    0x000000000000162b      0x519 CMakeFiles/Joint_Clion.elf.dir/Core/Src/gpio.c.obj
+ .debug_info    0x0000000000001b44      0xe3a CMakeFiles/Joint_Clion.elf.dir/Core/Src/main.c.obj
+ .debug_info    0x000000000000297e      0x5b0 CMakeFiles/Joint_Clion.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_info    0x0000000000002f2e      0xc9b CMakeFiles/Joint_Clion.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj
+ .debug_info    0x0000000000003bc9      0xa40 CMakeFiles/Joint_Clion.elf.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_info    0x0000000000004609      0x9a1 CMakeFiles/Joint_Clion.elf.dir/Core/Src/sysmem.c.obj
+ .debug_info    0x0000000000004faa      0x555 CMakeFiles/Joint_Clion.elf.dir/Core/Src/system_stm32f4xx.c.obj
+ .debug_info    0x00000000000054ff     0x1041 CMakeFiles/Joint_Clion.elf.dir/Core/Src/tim.c.obj
+ .debug_info    0x0000000000006540      0xd62 CMakeFiles/Joint_Clion.elf.dir/Core/Src/usart.c.obj
+ .debug_info    0x00000000000072a2       0x22 CMakeFiles/Joint_Clion.elf.dir/Core/Startup/startup_stm32f407ighx.s.obj
+ .debug_info    0x00000000000072c4      0x9ed CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .debug_info    0x0000000000007cb1      0xf88 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .debug_info    0x0000000000008c39      0xaa9 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ .debug_info    0x00000000000096e2      0x7cc CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .debug_info    0x0000000000009eae      0xa90 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .debug_info    0x000000000000a93e     0x359a CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .debug_info    0x000000000000ded8     0x180b CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .debug_info    0x000000000000f6e3     0x1a81 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+ .debug_info    0x0000000000011164     0x2862 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj
+ .debug_info    0x00000000000139c6      0xad4 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
+ .debug_info    0x000000000001449a      0x56b CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
+ .debug_info    0x0000000000014a05      0xdad CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
+ .debug_info    0x00000000000157b2     0x310c CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+ .debug_info    0x00000000000188be      0x2e5 CMakeFiles/Joint_Clion.elf.dir/bsp/delay.c.obj
+ .debug_info    0x0000000000018ba3      0xc31 CMakeFiles/Joint_Clion.elf.dir/bsp/myiic.c.obj
+ .debug_info    0x00000000000197d4      0x99b CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.obj
 
-.debug_abbrev   0x0000000000000000     0x39f2
+.debug_abbrev   0x0000000000000000     0x3a0a
  .debug_abbrev  0x0000000000000000      0x1a2 CMakeFiles/Joint_Clion.elf.dir/Applications/Joint_Task.cpp.obj
  .debug_abbrev  0x00000000000001a2      0x13d CMakeFiles/Joint_Clion.elf.dir/Core/Src/dma.c.obj
  .debug_abbrev  0x00000000000002df      0x182 CMakeFiles/Joint_Clion.elf.dir/Core/Src/freertos.c.obj
@@ -2921,10 +2923,10 @@ OUTPUT(Joint_Clion.elf elf32-littlearm)
  .debug_abbrev  0x0000000000002e75      0x326 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
  .debug_abbrev  0x000000000000319b      0x3ae CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
  .debug_abbrev  0x0000000000003549      0x12a CMakeFiles/Joint_Clion.elf.dir/bsp/delay.c.obj
- .debug_abbrev  0x0000000000003673      0x1d1 CMakeFiles/Joint_Clion.elf.dir/bsp/myiic.c.obj
- .debug_abbrev  0x0000000000003844      0x1ae CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.obj
+ .debug_abbrev  0x0000000000003673      0x1da CMakeFiles/Joint_Clion.elf.dir/bsp/myiic.c.obj
+ .debug_abbrev  0x000000000000384d      0x1bd CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.obj
 
-.debug_loc      0x0000000000000000     0xcd9f
+.debug_loc      0x0000000000000000     0xcdb2
  .debug_loc     0x0000000000000000       0x21 CMakeFiles/Joint_Clion.elf.dir/Applications/Joint_Task.cpp.obj
  .debug_loc     0x0000000000000021       0x42 CMakeFiles/Joint_Clion.elf.dir/Core/Src/freertos.c.obj
  .debug_loc     0x0000000000000063       0x3a CMakeFiles/Joint_Clion.elf.dir/Core/Src/main.c.obj
@@ -2948,8 +2950,9 @@ OUTPUT(Joint_Clion.elf elf32-littlearm)
  .debug_loc     0x000000000000aee6     0x1ad7 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
  .debug_loc     0x000000000000c9bd      0x1e6 CMakeFiles/Joint_Clion.elf.dir/bsp/delay.c.obj
  .debug_loc     0x000000000000cba3      0x1fc CMakeFiles/Joint_Clion.elf.dir/bsp/myiic.c.obj
+ .debug_loc     0x000000000000cd9f       0x13 CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.obj
 
-.debug_aranges  0x0000000000000000     0x1248
+.debug_aranges  0x0000000000000000     0x1250
  .debug_aranges
                 0x0000000000000000       0x20 CMakeFiles/Joint_Clion.elf.dir/Applications/Joint_Task.cpp.obj
  .debug_aranges
@@ -3007,9 +3010,9 @@ OUTPUT(Joint_Clion.elf elf32-littlearm)
  .debug_aranges
                 0x00000000000011a0       0x78 CMakeFiles/Joint_Clion.elf.dir/bsp/myiic.c.obj
  .debug_aranges
-                0x0000000000001218       0x30 CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.obj
+                0x0000000000001218       0x38 CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.obj
 
-.debug_ranges   0x0000000000000000     0x11b8
+.debug_ranges   0x0000000000000000     0x11c0
  .debug_ranges  0x0000000000000000       0x10 CMakeFiles/Joint_Clion.elf.dir/Applications/Joint_Task.cpp.obj
  .debug_ranges  0x0000000000000010       0x10 CMakeFiles/Joint_Clion.elf.dir/Core/Src/dma.c.obj
  .debug_ranges  0x0000000000000020       0x28 CMakeFiles/Joint_Clion.elf.dir/Core/Src/freertos.c.obj
@@ -3038,98 +3041,98 @@ OUTPUT(Joint_Clion.elf elf32-littlearm)
  .debug_ranges  0x0000000000000e90      0x280 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
  .debug_ranges  0x0000000000001110       0x20 CMakeFiles/Joint_Clion.elf.dir/bsp/delay.c.obj
  .debug_ranges  0x0000000000001130       0x68 CMakeFiles/Joint_Clion.elf.dir/bsp/myiic.c.obj
- .debug_ranges  0x0000000000001198       0x20 CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.obj
+ .debug_ranges  0x0000000000001198       0x28 CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.obj
 
-.debug_line     0x0000000000000000     0xa8ba
- .debug_line    0x0000000000000000      0x350 CMakeFiles/Joint_Clion.elf.dir/Applications/Joint_Task.cpp.obj
- .debug_line    0x0000000000000350      0x270 CMakeFiles/Joint_Clion.elf.dir/Core/Src/dma.c.obj
- .debug_line    0x00000000000005c0      0x435 CMakeFiles/Joint_Clion.elf.dir/Core/Src/freertos.c.obj
- .debug_line    0x00000000000009f5      0x275 CMakeFiles/Joint_Clion.elf.dir/Core/Src/gpio.c.obj
- .debug_line    0x0000000000000c6a      0x425 CMakeFiles/Joint_Clion.elf.dir/Core/Src/main.c.obj
- .debug_line    0x000000000000108f      0x27d CMakeFiles/Joint_Clion.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
- .debug_line    0x000000000000130c      0x310 CMakeFiles/Joint_Clion.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj
- .debug_line    0x000000000000161c      0x351 CMakeFiles/Joint_Clion.elf.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_line    0x000000000000196d      0x1b2 CMakeFiles/Joint_Clion.elf.dir/Core/Src/sysmem.c.obj
- .debug_line    0x0000000000001b1f      0x28c CMakeFiles/Joint_Clion.elf.dir/Core/Src/system_stm32f4xx.c.obj
- .debug_line    0x0000000000001dab      0x3b5 CMakeFiles/Joint_Clion.elf.dir/Core/Src/tim.c.obj
- .debug_line    0x0000000000002160      0x386 CMakeFiles/Joint_Clion.elf.dir/Core/Src/usart.c.obj
- .debug_line    0x00000000000024e6       0xb3 CMakeFiles/Joint_Clion.elf.dir/Core/Startup/startup_stm32f407ighx.s.obj
- .debug_line    0x0000000000002599      0x4aa CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
- .debug_line    0x0000000000002a43      0x4f4 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
- .debug_line    0x0000000000002f37      0x5cf CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
- .debug_line    0x0000000000003506      0x426 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
- .debug_line    0x000000000000392c      0x567 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
- .debug_line    0x0000000000003e93     0x1f76 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
- .debug_line    0x0000000000005e09      0xf2c CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
- .debug_line    0x0000000000006d35      0xd98 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
- .debug_line    0x0000000000007acd      0xa1c CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj
- .debug_line    0x00000000000084e9      0x3af CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
- .debug_line    0x0000000000008898      0x3be CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
- .debug_line    0x0000000000008c56      0x49b CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
- .debug_line    0x00000000000090f1      0xe28 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
- .debug_line    0x0000000000009f19      0x27f CMakeFiles/Joint_Clion.elf.dir/bsp/delay.c.obj
- .debug_line    0x000000000000a198      0x3c7 CMakeFiles/Joint_Clion.elf.dir/bsp/myiic.c.obj
- .debug_line    0x000000000000a55f      0x35b CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.obj
+.debug_line     0x0000000000000000     0xa8d1
+ .debug_line    0x0000000000000000      0x34f CMakeFiles/Joint_Clion.elf.dir/Applications/Joint_Task.cpp.obj
+ .debug_line    0x000000000000034f      0x270 CMakeFiles/Joint_Clion.elf.dir/Core/Src/dma.c.obj
+ .debug_line    0x00000000000005bf      0x435 CMakeFiles/Joint_Clion.elf.dir/Core/Src/freertos.c.obj
+ .debug_line    0x00000000000009f4      0x275 CMakeFiles/Joint_Clion.elf.dir/Core/Src/gpio.c.obj
+ .debug_line    0x0000000000000c69      0x425 CMakeFiles/Joint_Clion.elf.dir/Core/Src/main.c.obj
+ .debug_line    0x000000000000108e      0x27d CMakeFiles/Joint_Clion.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_line    0x000000000000130b      0x310 CMakeFiles/Joint_Clion.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj
+ .debug_line    0x000000000000161b      0x351 CMakeFiles/Joint_Clion.elf.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_line    0x000000000000196c      0x1b2 CMakeFiles/Joint_Clion.elf.dir/Core/Src/sysmem.c.obj
+ .debug_line    0x0000000000001b1e      0x28c CMakeFiles/Joint_Clion.elf.dir/Core/Src/system_stm32f4xx.c.obj
+ .debug_line    0x0000000000001daa      0x3b5 CMakeFiles/Joint_Clion.elf.dir/Core/Src/tim.c.obj
+ .debug_line    0x000000000000215f      0x386 CMakeFiles/Joint_Clion.elf.dir/Core/Src/usart.c.obj
+ .debug_line    0x00000000000024e5       0xb3 CMakeFiles/Joint_Clion.elf.dir/Core/Startup/startup_stm32f407ighx.s.obj
+ .debug_line    0x0000000000002598      0x4aa CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .debug_line    0x0000000000002a42      0x4f4 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .debug_line    0x0000000000002f36      0x5cf CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ .debug_line    0x0000000000003505      0x426 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .debug_line    0x000000000000392b      0x567 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .debug_line    0x0000000000003e92     0x1f76 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .debug_line    0x0000000000005e08      0xf2c CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .debug_line    0x0000000000006d34      0xd98 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+ .debug_line    0x0000000000007acc      0xa1c CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj
+ .debug_line    0x00000000000084e8      0x3af CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
+ .debug_line    0x0000000000008897      0x3be CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
+ .debug_line    0x0000000000008c55      0x49b CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
+ .debug_line    0x00000000000090f0      0xe28 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+ .debug_line    0x0000000000009f18      0x27f CMakeFiles/Joint_Clion.elf.dir/bsp/delay.c.obj
+ .debug_line    0x000000000000a197      0x3ca CMakeFiles/Joint_Clion.elf.dir/bsp/myiic.c.obj
+ .debug_line    0x000000000000a561      0x370 CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.obj
 
-.debug_str      0x0000000000000000     0x67f9
- .debug_str     0x0000000000000000      0xa82 CMakeFiles/Joint_Clion.elf.dir/Applications/Joint_Task.cpp.obj
-                                        0xcab (size before relaxing)
- .debug_str     0x0000000000000a82      0x74b CMakeFiles/Joint_Clion.elf.dir/Core/Src/dma.c.obj
+.debug_str      0x0000000000000000     0x681b
+ .debug_str     0x0000000000000000      0xa6c CMakeFiles/Joint_Clion.elf.dir/Applications/Joint_Task.cpp.obj
+                                        0xc95 (size before relaxing)
+ .debug_str     0x0000000000000a6c      0x74b CMakeFiles/Joint_Clion.elf.dir/Core/Src/dma.c.obj
                                         0x912 (size before relaxing)
- .debug_str     0x00000000000011cd      0x317 CMakeFiles/Joint_Clion.elf.dir/Core/Src/freertos.c.obj
+ .debug_str     0x00000000000011b7      0x317 CMakeFiles/Joint_Clion.elf.dir/Core/Src/freertos.c.obj
                                         0x622 (size before relaxing)
- .debug_str     0x00000000000014e4       0x8f CMakeFiles/Joint_Clion.elf.dir/Core/Src/gpio.c.obj
+ .debug_str     0x00000000000014ce       0x8f CMakeFiles/Joint_Clion.elf.dir/Core/Src/gpio.c.obj
                                         0x4bb (size before relaxing)
- .debug_str     0x0000000000001573      0x22a CMakeFiles/Joint_Clion.elf.dir/Core/Src/main.c.obj
+ .debug_str     0x000000000000155d      0x22a CMakeFiles/Joint_Clion.elf.dir/Core/Src/main.c.obj
                                         0xd50 (size before relaxing)
- .debug_str     0x000000000000179d       0x57 CMakeFiles/Joint_Clion.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_str     0x0000000000001787       0x57 CMakeFiles/Joint_Clion.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
                                         0x90d (size before relaxing)
- .debug_str     0x00000000000017f4      0x117 CMakeFiles/Joint_Clion.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj
+ .debug_str     0x00000000000017de      0x117 CMakeFiles/Joint_Clion.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj
                                         0xf8f (size before relaxing)
- .debug_str     0x000000000000190b      0x15e CMakeFiles/Joint_Clion.elf.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_str     0x00000000000018f5      0x15e CMakeFiles/Joint_Clion.elf.dir/Core/Src/stm32f4xx_it.c.obj
                                         0xb2b (size before relaxing)
- .debug_str     0x0000000000001a69      0x476 CMakeFiles/Joint_Clion.elf.dir/Core/Src/sysmem.c.obj
+ .debug_str     0x0000000000001a53      0x476 CMakeFiles/Joint_Clion.elf.dir/Core/Src/sysmem.c.obj
                                         0x689 (size before relaxing)
- .debug_str     0x0000000000001edf       0xda CMakeFiles/Joint_Clion.elf.dir/Core/Src/system_stm32f4xx.c.obj
+ .debug_str     0x0000000000001ec9       0xda CMakeFiles/Joint_Clion.elf.dir/Core/Src/system_stm32f4xx.c.obj
                                         0x486 (size before relaxing)
- .debug_str     0x0000000000001fb9      0x2c9 CMakeFiles/Joint_Clion.elf.dir/Core/Src/tim.c.obj
+ .debug_str     0x0000000000001fa3      0x2c9 CMakeFiles/Joint_Clion.elf.dir/Core/Src/tim.c.obj
                                        0x11c3 (size before relaxing)
- .debug_str     0x0000000000002282       0xa8 CMakeFiles/Joint_Clion.elf.dir/Core/Src/usart.c.obj
+ .debug_str     0x000000000000226c       0xa8 CMakeFiles/Joint_Clion.elf.dir/Core/Src/usart.c.obj
                                         0xe9d (size before relaxing)
- .debug_str     0x000000000000232a       0x62 CMakeFiles/Joint_Clion.elf.dir/Core/Startup/startup_stm32f407ighx.s.obj
+ .debug_str     0x0000000000002314       0x62 CMakeFiles/Joint_Clion.elf.dir/Core/Startup/startup_stm32f407ighx.s.obj
                                          0xa2 (size before relaxing)
- .debug_str     0x000000000000238c      0x2c0 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .debug_str     0x0000000000002376      0x2c0 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
                                         0xc18 (size before relaxing)
- .debug_str     0x000000000000264c      0x448 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .debug_str     0x0000000000002636      0x448 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
                                         0xd57 (size before relaxing)
- .debug_str     0x0000000000002a94      0x30a CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ .debug_str     0x0000000000002a7e      0x30a CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
                                         0x8a3 (size before relaxing)
- .debug_str     0x0000000000002d9e      0x145 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .debug_str     0x0000000000002d88      0x145 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
                                         0x61d (size before relaxing)
- .debug_str     0x0000000000002ee3      0x188 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .debug_str     0x0000000000002ecd      0x188 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
                                         0x7fb (size before relaxing)
- .debug_str     0x000000000000306b      0xdb3 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .debug_str     0x0000000000003055      0xdb3 CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
                                        0x1801 (size before relaxing)
- .debug_str     0x0000000000003e1e      0x49d CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .debug_str     0x0000000000003e08      0x49d CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
                                        0x1002 (size before relaxing)
- .debug_str     0x00000000000042bb      0x5fc CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+ .debug_str     0x00000000000042a5      0x5fc CMakeFiles/Joint_Clion.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
                                         0xe61 (size before relaxing)
- .debug_str     0x00000000000048b7      0xcb7 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj
+ .debug_str     0x00000000000048a1      0xcb7 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj
                                        0x1592 (size before relaxing)
- .debug_str     0x000000000000556e      0x16e CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
+ .debug_str     0x0000000000005558      0x16e CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
                                         0x769 (size before relaxing)
- .debug_str     0x00000000000056dc      0x258 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
+ .debug_str     0x00000000000056c6      0x258 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
                                         0x4ef (size before relaxing)
- .debug_str     0x0000000000005934      0x2fd CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
+ .debug_str     0x000000000000591e      0x2fd CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
                                         0x977 (size before relaxing)
- .debug_str     0x0000000000005c31      0x9eb CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+ .debug_str     0x0000000000005c1b      0x9eb CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
                                        0x1592 (size before relaxing)
- .debug_str     0x000000000000661c       0x74 CMakeFiles/Joint_Clion.elf.dir/bsp/delay.c.obj
+ .debug_str     0x0000000000006606       0x74 CMakeFiles/Joint_Clion.elf.dir/bsp/delay.c.obj
                                         0x362 (size before relaxing)
- .debug_str     0x0000000000006690      0x10b CMakeFiles/Joint_Clion.elf.dir/bsp/myiic.c.obj
-                                        0x5a4 (size before relaxing)
- .debug_str     0x000000000000679b       0x5e CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.obj
-                                        0x872 (size before relaxing)
+ .debug_str     0x000000000000667a      0x118 CMakeFiles/Joint_Clion.elf.dir/bsp/myiic.c.obj
+                                        0x5b1 (size before relaxing)
+ .debug_str     0x0000000000006792       0x89 CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.obj
+                                        0x887 (size before relaxing)
 
 .comment        0x0000000000000000       0x7e
  .comment       0x0000000000000000       0x7e CMakeFiles/Joint_Clion.elf.dir/Applications/Joint_Task.cpp.obj
@@ -3162,7 +3165,7 @@ OUTPUT(Joint_Clion.elf elf32-littlearm)
  .comment       0x000000000000007e       0x7f CMakeFiles/Joint_Clion.elf.dir/bsp/myiic.c.obj
  .comment       0x000000000000007e       0x7f CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.obj
 
-.debug_frame    0x0000000000000000     0x34f8
+.debug_frame    0x0000000000000000     0x350c
  .debug_frame   0x0000000000000000       0x28 CMakeFiles/Joint_Clion.elf.dir/Applications/Joint_Task.cpp.obj
  .debug_frame   0x0000000000000028       0x30 CMakeFiles/Joint_Clion.elf.dir/Core/Src/dma.c.obj
  .debug_frame   0x0000000000000058       0x74 CMakeFiles/Joint_Clion.elf.dir/Core/Src/freertos.c.obj
@@ -3190,20 +3193,20 @@ OUTPUT(Joint_Clion.elf elf32-littlearm)
  .debug_frame   0x00000000000028e4      0x5c8 CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
  .debug_frame   0x0000000000002eac       0x58 CMakeFiles/Joint_Clion.elf.dir/bsp/delay.c.obj
  .debug_frame   0x0000000000002f04      0x14c CMakeFiles/Joint_Clion.elf.dir/bsp/myiic.c.obj
- .debug_frame   0x0000000000003050       0x68 CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.obj
- .debug_frame   0x00000000000030b8       0x2c /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_aeabi_uldivmod.o)
- .debug_frame   0x00000000000030e4       0x34 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_udivmoddi4.o)
- .debug_frame   0x0000000000003118       0x20 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-errno.o)
- .debug_frame   0x0000000000003138       0x2c /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-init.o)
- .debug_frame   0x0000000000003164       0x30 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-malloc.o)
- .debug_frame   0x0000000000003194       0x54 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-mallocr.o)
- .debug_frame   0x00000000000031e8       0x38 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-memset.o)
- .debug_frame   0x0000000000003220       0x30 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-mlock.o)
- .debug_frame   0x0000000000003250       0x2c /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-sbrkr.o)
- .debug_frame   0x000000000000327c       0x5c /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-__call_atexit.o)
- .debug_frame   0x00000000000032d8       0x20 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-atexit.o)
- .debug_frame   0x00000000000032f8       0x34 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-fini.o)
- .debug_frame   0x000000000000332c       0x80 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-freer.o)
- .debug_frame   0x00000000000033ac       0xb0 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-lock.o)
- .debug_frame   0x000000000000345c       0x68 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-reent.o)
- .debug_frame   0x00000000000034c4       0x34 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-__atexit.o)
+ .debug_frame   0x0000000000003050       0x7c CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.obj
+ .debug_frame   0x00000000000030cc       0x2c /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_aeabi_uldivmod.o)
+ .debug_frame   0x00000000000030f8       0x34 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_udivmoddi4.o)
+ .debug_frame   0x000000000000312c       0x20 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-errno.o)
+ .debug_frame   0x000000000000314c       0x2c /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-init.o)
+ .debug_frame   0x0000000000003178       0x30 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-malloc.o)
+ .debug_frame   0x00000000000031a8       0x54 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-mallocr.o)
+ .debug_frame   0x00000000000031fc       0x38 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-memset.o)
+ .debug_frame   0x0000000000003234       0x30 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-mlock.o)
+ .debug_frame   0x0000000000003264       0x2c /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-sbrkr.o)
+ .debug_frame   0x0000000000003290       0x5c /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-__call_atexit.o)
+ .debug_frame   0x00000000000032ec       0x20 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-atexit.o)
+ .debug_frame   0x000000000000330c       0x34 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-fini.o)
+ .debug_frame   0x0000000000003340       0x80 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-freer.o)
+ .debug_frame   0x00000000000033c0       0xb0 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-lock.o)
+ .debug_frame   0x0000000000003470       0x68 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-reent.o)
+ .debug_frame   0x00000000000034d8       0x34 /home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-__atexit.o)

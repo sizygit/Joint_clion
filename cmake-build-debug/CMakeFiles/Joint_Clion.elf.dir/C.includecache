@@ -306,12 +306,6 @@ stm32f4xx_hal_def.h
 stm32f4xx_hal_def.h
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
 
-../bsp/myiic.h
-stm32f4xx.h
-../bsp/stm32f4xx.h
-main.h
-../bsp/main.h
-
 /home/szy/STM32-files/Joint_clion/Joint_Clion/bsp/delay.h
 main.h
 /home/szy/STM32-files/Joint_clion/Joint_Clion/bsp/main.h
@@ -327,18 +321,4 @@ stm32f4xx.h
 /home/szy/STM32-files/Joint_clion/Joint_Clion/bsp/stm32f4xx.h
 main.h
 /home/szy/STM32-files/Joint_clion/Joint_Clion/bsp/main.h
-
-/home/szy/STM32-files/Joint_clion/Joint_Clion/component/PCA9685/PCA9685_driver.c
-PCA9685_driver.h
-/home/szy/STM32-files/Joint_clion/Joint_Clion/component/PCA9685/PCA9685_driver.h
-myiic.h
-/home/szy/STM32-files/Joint_clion/Joint_Clion/component/PCA9685/myiic.h
-
-/home/szy/STM32-files/Joint_clion/Joint_Clion/component/PCA9685/PCA9685_driver.h
-PCA9685_register.h
-/home/szy/STM32-files/Joint_clion/Joint_Clion/component/PCA9685/PCA9685_register.h
-
-/home/szy/STM32-files/Joint_clion/Joint_Clion/component/PCA9685/PCA9685_register.h
-main.h
-/home/szy/STM32-files/Joint_clion/Joint_Clion/component/PCA9685/main.h
 

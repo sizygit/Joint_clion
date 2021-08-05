@@ -13,8 +13,8 @@ void Joint_Task(void const * argument)
 {
     if(PCA9685_SoftWareReset() != 0)
         HAL_GPIO_WritePin(LED_R_GPIO_Port,LED_R_Pin,GPIO_PIN_SET);
-    PCA9685_Init();
-    PCA9685_setAutoIncrement();
+    PCA9685_Restart();
+
     while (1);
 
     if(HAL_TIM_Base_Start(&htim1) == HAL_OK)
