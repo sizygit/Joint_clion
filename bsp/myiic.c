@@ -178,6 +178,7 @@ uint8_t IIC_Read_One_Byte(uint8_t slave_addr,uint8_t control_addr)
 /**
  * @brief IIC continuous reading
  *        -- enable register Auto-Increment
+ * @bug   when buf[] is local variables,the IIC_Read_Multi_Bytes() can't read correctly in last two  bytes
  * @return
  */
 uint8_t IIC_Read_Multi_Bytes(uint8_t slave_addr,uint8_t control_addr,uint8_t len,uint8_t *buf)
@@ -204,17 +205,12 @@ uint8_t IIC_Read_Multi_Bytes(uint8_t slave_addr,uint8_t control_addr,uint8_t len
     IIC_Stop();
     return 0;*/
     for (;  ; ) {
-        if (len == 1){
-            *buf = IIC_Read_One_Byte(slave_addr,control_addr);
+        *buf = IIC_Read_One_Byte(slave_addr,control_addr);
+        len --;
+        buf ++;
+        control_addr ++;
+        if(len == 0)
             return 0;
-        }
-        else
-        {
-            *buf = IIC_Read_One_Byte(slave_addr,control_addr);
-            len --;
-            buf ++;
-            control_addr ++;
-        }
     }
 }
 /**
@@ -245,25 +241,21 @@ uint8_t IIC_Write_Multi_Bytes(uint8_t slave_addr,uint8_t control_addr,uint8_t le
     }
     IIC_Stop();
     return 0;
+    for (;  ; ) {
+        if (len == 1){
+            IIC_Write_One_Byte(slave_addr,control_addr,*buf);
+            return 0;
+        }
+        else
+        {
+            IIC_Write_One_Byte(slave_addr,control_addr,*buf);
+            len --;
+            buf ++;
+            control_addr ++;
+        }
+    }
 }
-/*******************************************************************************
-* Function Name  : I2C_ReadByte
-* Description    : 检测设备工作正常并且通讯成功
-* Input          : DeviceAddress: 设备地址
-* Output         : None
-* Return         : 返回为:=1成功,=0失败，并且亮起警示灯
-* Attention	: None
-*******************************************************************************/
-uint8_t checkDevice(uint8_t DeviceAddress){
-    uint8_t haveAck;
-    IIC_Start();
-    IIC_Send_Byte(DeviceAddress & 0xFFFE);
-    haveAck = IIC_Wait_Ack();
-    if(haveAck)HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
-    else HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_SET);
-    IIC_Stop();
-    return haveAck;
-}
+
 
 
 

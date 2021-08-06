@@ -1225,6 +1225,7 @@ CMakeFiles/Joint_Clion.elf.dir/Applications/Joint_Task.cpp.obj: ../Middlewares/T
 CMakeFiles/Joint_Clion.elf.dir/Applications/Joint_Task.cpp.obj: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
 CMakeFiles/Joint_Clion.elf.dir/Applications/Joint_Task.cpp.obj: ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
 CMakeFiles/Joint_Clion.elf.dir/Applications/Joint_Task.cpp.obj: ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h
+CMakeFiles/Joint_Clion.elf.dir/Applications/Joint_Task.cpp.obj: ../bsp/myiic.h
 CMakeFiles/Joint_Clion.elf.dir/Applications/Joint_Task.cpp.obj: ../component/PCA9685/PCA9685_driver.h
 CMakeFiles/Joint_Clion.elf.dir/Applications/Joint_Task.cpp.obj: ../component/PCA9685/PCA9685_register.h
 CMakeFiles/Joint_Clion.elf.dir/Applications/Joint_Task.cpp.obj: ../Applications/Joint_Task.cpp

@@ -1226,6 +1226,7 @@ CMakeFiles/Joint_Clion.elf.dir/Applications/Joint_Task.cpp.obj
  ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
  ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h
+ ../bsp/myiic.h
  ../component/PCA9685/PCA9685_driver.h
  ../component/PCA9685/PCA9685_register.h
  /home/szy/STM32-files/Joint_clion/Joint_Clion/Applications/Joint_Task.cpp

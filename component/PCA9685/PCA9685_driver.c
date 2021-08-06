@@ -8,6 +8,19 @@
 #ifndef PCA9685
 #define PCA9685
 #endif
+/**@attention this driver is for PCA9685 components which don't use external CLOCK and sub IIC-bus(only drive a PCA9685)
+ *            please add the relevant simulate IIC program and GPIO pin configuration.such as #include "myiic.h"
+ *@Connect the wire:     V+  -- 5v for servo
+ *                       VCC -- 3.3V for pca9685
+ *                       SDA/SCL
+ *                       GND
+ *@details    1. use PCA9685_SoftWareReset() for software reset
+ *            2. use PCA9685_setFrequency()  to set PWM frequency
+ *            3. use PCA9685_Restart() to restart every register for reload PWM control register
+ *            4. use PCA9685_setPWM() to set PWM for any channels
+ */
+
+
 extern UART_HandleTypeDef huart1;
 /**
  * @brief   initialize the PCA9685 and IIC bus--restart mode
@@ -16,10 +29,10 @@ extern UART_HandleTypeDef huart1;
  */
 uint8_t PCA9685_Restart()
 {
-    uint8_t bit7_RESTART,res=0Xf1;
+    uint8_t res=0Xf1;
     IIC_Init();
     res = IIC_Read_One_Byte(PCA9685_ADDR,MODE1);
-    HAL_UART_Transmit_DMA(&huart1,&res,1);             ///debug
+    //HAL_UART_Transmit_DMA(&huart1,&res,1);             ///debug
     if((res >> 7) == 1) {                                  //check the RESTART bit
         IIC_Write_One_Byte(PCA9685_ADDR,MODE1,res & 0X6F);  //clear the SLEEP bit from 1 to 0
         HAL_GPIO_WritePin(LED_B_GPIO_Port,LED_B_Pin,GPIO_PIN_SET);
@@ -31,8 +44,8 @@ uint8_t PCA9685_Restart()
         return 1;
     }
     HAL_Delay(1);                                       // Allow time for oscillator to stabilize
-    res = IIC_Read_One_Byte(PCA9685_ADDR,MODE1);             // 0X20 0010 0000
-    HAL_UART_Transmit_DMA(&huart1,&res,1);             ///debug
+    //res = IIC_Read_One_Byte(PCA9685_ADDR,MODE1);             // 0X20 0010 0000
+    //HAL_UART_Transmit_DMA(&huart1,&res,1);             ///debug
     return 0;
 }
 /**
@@ -89,11 +102,12 @@ uint8_t PCA9685_setEXTCLK()
 {
     uint8_t res;
     res = IIC_Read_One_Byte(PCA9685_ADDR,MODE1);
-    HAL_UART_Transmit_DMA(&huart1,&res,1);          ///debug
+    //HAL_UART_Transmit_DMA(&huart1,&res,1);          ///debug
     IIC_Write_One_Byte(PCA9685_ADDR,MODE1,(0X50 | res));   //Write logic 1s to both the SLEEP and EXTCLK bits in MODE1.
+    return 0;
 }
 /**
- * @brief   set the PRE_SCALE register to get the expected frequency(24 Hz to 1526 Hz -- 0X03 to 0XFF)
+ * @brief   set the PRE_SCALE register to get the expected frequency( 24 Hz~1526 Hz -- 0X03~0XFF)
  *          --25 MHz typical internal  --External 50 MHz (max.) clock input
  *          --The PRE_SCALE register can only be set when the SLEEP bit of MODE1 register is set to logic 1
  *          --at the same time, AI is configured in this function
@@ -121,19 +135,39 @@ uint8_t PCA9685_setFrequency(uint16_t freq)
     HAL_Delay(1);
     return 0;
 }
-
+/**
+ * @bug when res1[4] is local variables,the IIC_Read_Multi_Bytes() can't read correctly in last two
+ *      bytes.
+ */
+//uint8_t  res1[4];                                                 ///debug
+/**
+ *
+ * @param pin      0~15:corresponding channels 16:ALL channels;  else value: false
+ * @param led_on   the count value when register output high level (0~4095)
+ * @param led_off  the count value when register output low level  (0~4095)
+ * @return  0: right
+ *          1: false
+ */
 uint8_t PCA9685_setPWM(uint8_t pin, uint16_t led_on, uint16_t led_off)
 {
     // pin 0 -15       count 0-4095
-    if(pin < 0 || pin > 15)
+    if(pin < 0 || pin > 16)
         return 1;
     uint8_t  buffer[4];
     buffer[0] = led_on;
     buffer[1] = led_on >> 8;
     buffer[2] = led_off;
-    buffer[3] = led_off >> 8;
-    IIC_Write_Multi_Bytes(PCA9685_ADDR,LED0_ON_L + 4 * pin,4,buffer);
-    uint8_t res[4];                                                 ///debug
-    IIC_Read_Multi_Bytes(PCA9685_ADDR,LED0_ON_L + 4 * pin,4,res);   ///debug
-    HAL_UART_Transmit_DMA(&huart1,res,4);                           ///debug
+    buffer[3] = (uint8_t)(led_off >> 8);
+    if(pin == 16)
+        if(IIC_Write_Multi_Bytes(PCA9685_ADDR,ALL_LED_ON_L,4,buffer) != 0){
+            HAL_GPIO_WritePin(LED_R_GPIO_Port, LED_R_Pin, GPIO_PIN_SET);
+            return 1;
+        }else;
+    else if(IIC_Write_Multi_Bytes(PCA9685_ADDR,LED0_ON_L + 4 * pin,4,buffer) != 0) {
+            HAL_GPIO_WritePin(LED_R_GPIO_Port, LED_R_Pin, GPIO_PIN_SET);
+            return 1;
+    }
+    //IIC_Read_Multi_Bytes(PCA9685_ADDR,LED0_ON_L + 4 * pin+ 4 * pin,4,res1);  ///debug
+    //HAL_UART_Transmit_DMA(&huart1,res1,4);                           ///debug
+    return 0;
 }
