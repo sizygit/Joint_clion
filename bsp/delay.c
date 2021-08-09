@@ -10,9 +10,14 @@ void delay_init(void)
     fac_ms = SystemCoreClock / 1000;
 
 }
-
+static uint8_t delayinit_Flag = 0;
 void delay_us(uint16_t nus)
 {
+    if (delayinit_Flag == 0)
+    {
+        delayinit_Flag = 1;
+        delay_init();
+    }
     uint32_t ticks = 0;
     uint32_t told = 0;
     uint32_t tnow = 0;
@@ -45,6 +50,11 @@ void delay_us(uint16_t nus)
 
 void delay_ms(uint16_t nms)
 {
+    if (delayinit_Flag == 0)
+    {
+        delayinit_Flag = 1;
+        delay_init();
+    }
     uint32_t ticks = 0;
     uint32_t told = 0;
     uint32_t tnow = 0;
