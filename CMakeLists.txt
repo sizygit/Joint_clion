@@ -50,11 +50,12 @@ include_directories(Core/Inc Drivers/STM32F4xx_HAL_Driver/Inc Drivers/STM32F4xx_
                       Algorithms/PID
                       Applications
                       component/PCA9685
-                      bsp)
+                      bsp
+                      bsp/SERVO_DRIVER)
 
 add_definitions(-DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx)
 
-file(GLOB_RECURSE SOURCES "Core/*.*" "Middlewares/*.*" "Drivers/*.*" "Algorithms/PID/*.*" "Applications/*.*" "component/PCA9685/*.*" "bsp/*.*")
+file(GLOB_RECURSE SOURCES "Core/*.*" "Middlewares/*.*" "Drivers/*.*" "Algorithms/PID/*.*" "Applications/*.*" "component/PCA9685/*.*" "bsp/*.*" "bsp/SERVO_DRIVER/*.*")
 
 set(LINKER_SCRIPT ${CMAKE_SOURCE_DIR}/STM32F407IGHX_FLASH.ld)
 

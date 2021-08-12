@@ -49,11 +49,12 @@ include_directories(${includes}
                       Algorithms/PID
                       Applications
                       component/PCA9685
-                      bsp)
+                      bsp
+                      bsp/SERVO_DRIVER)
 
 add_definitions(${defines})
 
-file(GLOB_RECURSE SOURCES ${sources} "Algorithms/PID/*.*" "Applications/*.*" "component/PCA9685/*.*" "bsp/*.*")
+file(GLOB_RECURSE SOURCES ${sources} "Algorithms/PID/*.*" "Applications/*.*" "component/PCA9685/*.*" "bsp/*.*" "bsp/SERVO_DRIVER/*.*")
 
 set(LINKER_SCRIPT $${CMAKE_SOURCE_DIR}/${linkerScript})
 
