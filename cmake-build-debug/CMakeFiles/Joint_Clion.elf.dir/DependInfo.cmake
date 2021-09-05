@@ -34,6 +34,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "../Applications"
   "../component/PCA9685"
   "../bsp"
+  "../bsp/SERVO_DRIVER"
   )
 set(CMAKE_DEPENDS_CHECK_C
   "/home/szy/STM32-files/Joint_clion/Joint_Clion/Core/Src/dma.c" "/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug/CMakeFiles/Joint_Clion.elf.dir/Core/Src/dma.c.obj"
@@ -104,10 +105,13 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../Applications"
   "../component/PCA9685"
   "../bsp"
+  "../bsp/SERVO_DRIVER"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/szy/STM32-files/Joint_clion/Joint_Clion/Algorithms/PID/pid.cpp" "/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug/CMakeFiles/Joint_Clion.elf.dir/Algorithms/PID/pid.cpp.obj"
   "/home/szy/STM32-files/Joint_clion/Joint_Clion/Applications/Joint_Task.cpp" "/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug/CMakeFiles/Joint_Clion.elf.dir/Applications/Joint_Task.cpp.obj"
+  "/home/szy/STM32-files/Joint_clion/Joint_Clion/bsp/SERVO_DRIVER/LX-16A_driver.cpp" "/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug/CMakeFiles/Joint_Clion.elf.dir/bsp/SERVO_DRIVER/LX-16A_driver.cpp.obj"
+  "/home/szy/STM32-files/Joint_clion/Joint_Clion/bsp/SERVO_DRIVER/Servo_driver.cpp" "/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug/CMakeFiles/Joint_Clion.elf.dir/bsp/SERVO_DRIVER/Servo_driver.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -135,6 +139,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../Applications"
   "../component/PCA9685"
   "../bsp"
+  "../bsp/SERVO_DRIVER"
   )
 
 # Targets to which this target links.

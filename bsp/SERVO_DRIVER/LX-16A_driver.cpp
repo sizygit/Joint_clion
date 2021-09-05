@@ -57,7 +57,12 @@ void LX16A::SetServoUnload(uint8_t id, uint8_t load_or_unload) {
     lx16A_tx_buf[6] = LobotCheckSum(lx16A_tx_buf);
     HAL_UART_Transmit_DMA(&SERVO_HUART,lx16A_tx_buf,lx16A_tx_buf[3]+3);
 }
-
+/**
+ * @brief set the angle(0-1000) and move time(0-30000)
+ * @param p_angleExp
+ * @param p_movetime_ms
+ * @param id
+ */
 void LX16A::SetServoExpAngle(uint16_t p_angleExp,uint16_t p_movetime_ms,uint8_t id) {
     if(p_angleExp > 1000)
         p_angleExp = 1000;
@@ -91,7 +96,8 @@ void LX16A::UpdateServoData(uint8_t id, uint8_t read_type) {
     while ((HAL_UART_GetState(&SERVO_HUART)) != HAL_UART_STATE_READY)
         HAL_GPIO_WritePin(LED_R_GPIO_Port,LED_R_Pin,GPIO_PIN_SET);
     HAL_GPIO_WritePin(LED_R_GPIO_Port,LED_R_Pin,GPIO_PIN_RESET);
-
+    while(rx_complete == 0) ;                                          // wait for uart's receive complete
+    rx_complete = 0;                                                   // clear the receive flag
 }
 
 uint8_t LX16A::UnpackData(uint8_t *rx_databuff) {
@@ -138,4 +144,53 @@ uint8_t LobotCheckSum(uint8_t buf[])
     return i;
 }
 
+int UART_Receive_DMA_No_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint32_t Size)
+{
+    uint32_t tmp = 0;
+
+    tmp = huart->RxState;
+    if (tmp == HAL_UART_STATE_READY)
+    {
+        if ((pData == NULL) || (Size == 0))
+        {
+            return HAL_ERROR;
+        }
+
+        /* Process Locked */
+        __HAL_LOCK(huart);
+
+        huart->pRxBuffPtr = pData;
+        huart->RxXferSize = Size;
+
+        huart->ErrorCode = HAL_UART_ERROR_NONE;
+
+        /* Enable the DMA Stream */
+        HAL_DMA_Start(huart->hdmarx, (uint32_t)&huart->Instance->DR,
+                      (uint32_t)pData, Size);
+
+        /* Enable the DMA transfer for the receiver request by setting the DMAR bit
+        in the UART CR3 register */
+        SET_BIT(huart->Instance->CR3, USART_CR3_DMAR);
+
+        /* Process Unlocked */
+        __HAL_UNLOCK(huart);
+        HAL_UART_Receive_DMA(huart,pData,Size);
+        return HAL_OK;
+    }
+    else
+    {
+        return HAL_BUSY;
+    }
+}
+
+void UARTDMA_Idle_rx_init()
+{
+    /* set the relevant uart DMA configure*/
+    UART_Receive_DMA_No_IT(&SERVO_HUART, lx16A_rx_buf, lx16A.protocolData_LEN_MAX);
+    /* open uart idle it */
+    __HAL_UART_CLEAR_IDLEFLAG(&SERVO_HUART);
+    /* enalbe idle interrupt */
+    __HAL_UART_ENABLE_IT(&SERVO_HUART, UART_IT_IDLE);
+
+}
 

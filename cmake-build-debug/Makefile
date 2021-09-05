@@ -1231,6 +1231,60 @@ Middlewares/Third_Party/FreeRTOS/Source/timers.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Joint_Clion.elf.dir/build.make CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.s
 .PHONY : Middlewares/Third_Party/FreeRTOS/Source/timers.c.s
 
+bsp/SERVO_DRIVER/LX-16A_driver.obj: bsp/SERVO_DRIVER/LX-16A_driver.cpp.obj
+
+.PHONY : bsp/SERVO_DRIVER/LX-16A_driver.obj
+
+# target to build an object file
+bsp/SERVO_DRIVER/LX-16A_driver.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Joint_Clion.elf.dir/build.make CMakeFiles/Joint_Clion.elf.dir/bsp/SERVO_DRIVER/LX-16A_driver.cpp.obj
+.PHONY : bsp/SERVO_DRIVER/LX-16A_driver.cpp.obj
+
+bsp/SERVO_DRIVER/LX-16A_driver.i: bsp/SERVO_DRIVER/LX-16A_driver.cpp.i
+
+.PHONY : bsp/SERVO_DRIVER/LX-16A_driver.i
+
+# target to preprocess a source file
+bsp/SERVO_DRIVER/LX-16A_driver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Joint_Clion.elf.dir/build.make CMakeFiles/Joint_Clion.elf.dir/bsp/SERVO_DRIVER/LX-16A_driver.cpp.i
+.PHONY : bsp/SERVO_DRIVER/LX-16A_driver.cpp.i
+
+bsp/SERVO_DRIVER/LX-16A_driver.s: bsp/SERVO_DRIVER/LX-16A_driver.cpp.s
+
+.PHONY : bsp/SERVO_DRIVER/LX-16A_driver.s
+
+# target to generate assembly for a file
+bsp/SERVO_DRIVER/LX-16A_driver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Joint_Clion.elf.dir/build.make CMakeFiles/Joint_Clion.elf.dir/bsp/SERVO_DRIVER/LX-16A_driver.cpp.s
+.PHONY : bsp/SERVO_DRIVER/LX-16A_driver.cpp.s
+
+bsp/SERVO_DRIVER/Servo_driver.obj: bsp/SERVO_DRIVER/Servo_driver.cpp.obj
+
+.PHONY : bsp/SERVO_DRIVER/Servo_driver.obj
+
+# target to build an object file
+bsp/SERVO_DRIVER/Servo_driver.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Joint_Clion.elf.dir/build.make CMakeFiles/Joint_Clion.elf.dir/bsp/SERVO_DRIVER/Servo_driver.cpp.obj
+.PHONY : bsp/SERVO_DRIVER/Servo_driver.cpp.obj
+
+bsp/SERVO_DRIVER/Servo_driver.i: bsp/SERVO_DRIVER/Servo_driver.cpp.i
+
+.PHONY : bsp/SERVO_DRIVER/Servo_driver.i
+
+# target to preprocess a source file
+bsp/SERVO_DRIVER/Servo_driver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Joint_Clion.elf.dir/build.make CMakeFiles/Joint_Clion.elf.dir/bsp/SERVO_DRIVER/Servo_driver.cpp.i
+.PHONY : bsp/SERVO_DRIVER/Servo_driver.cpp.i
+
+bsp/SERVO_DRIVER/Servo_driver.s: bsp/SERVO_DRIVER/Servo_driver.cpp.s
+
+.PHONY : bsp/SERVO_DRIVER/Servo_driver.s
+
+# target to generate assembly for a file
+bsp/SERVO_DRIVER/Servo_driver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Joint_Clion.elf.dir/build.make CMakeFiles/Joint_Clion.elf.dir/bsp/SERVO_DRIVER/Servo_driver.cpp.s
+.PHONY : bsp/SERVO_DRIVER/Servo_driver.cpp.s
+
 bsp/delay.obj: bsp/delay.c.obj
 
 .PHONY : bsp/delay.obj
@@ -1442,6 +1496,12 @@ help:
 	@echo "... Middlewares/Third_Party/FreeRTOS/Source/timers.obj"
 	@echo "... Middlewares/Third_Party/FreeRTOS/Source/timers.i"
 	@echo "... Middlewares/Third_Party/FreeRTOS/Source/timers.s"
+	@echo "... bsp/SERVO_DRIVER/LX-16A_driver.obj"
+	@echo "... bsp/SERVO_DRIVER/LX-16A_driver.i"
+	@echo "... bsp/SERVO_DRIVER/LX-16A_driver.s"
+	@echo "... bsp/SERVO_DRIVER/Servo_driver.obj"
+	@echo "... bsp/SERVO_DRIVER/Servo_driver.i"
+	@echo "... bsp/SERVO_DRIVER/Servo_driver.s"
 	@echo "... bsp/delay.obj"
 	@echo "... bsp/delay.i"
 	@echo "... bsp/delay.s"

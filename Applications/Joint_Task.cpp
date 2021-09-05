@@ -12,7 +12,8 @@ extern UART_HandleTypeDef huart1;
 LX16A lx16A(LX16A::SERVO_240);
 #define LX16A_EN
 //#define PCA9685_EN
-int16_t angle;
+int16_t angle1;
+int16_t angle2;
 void Joint_Task(void const * argument)
 {
 #ifdef PCA9685_EN
@@ -27,10 +28,13 @@ void Joint_Task(void const * argument)
 #endif
 #ifdef LX16A_EN
     lx16A.Init();
-    lx16A.SetServoExpAngle(200,800,1);
+    lx16A.SetServoExpAngle(300,2000,2);
+    lx16A.SetServoExpAngle(600,2000,1);
     HAL_Delay(10);
     lx16A.UpdateServoData(1,SERVO_POS_READ);
-    angle = lx16A.angleReal;
+    angle1 = lx16A.angleReal;
+    lx16A.UpdateServoData(2,SERVO_POS_READ);
+    angle2 = lx16A.angleReal;
 
 
 #endif

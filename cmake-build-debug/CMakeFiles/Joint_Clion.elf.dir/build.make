@@ -601,9 +601,35 @@ CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.s"
 	/home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/szy/STM32-files/Joint_clion/Joint_Clion/Middlewares/Third_Party/FreeRTOS/Source/timers.c -o CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.s
 
+CMakeFiles/Joint_Clion.elf.dir/bsp/SERVO_DRIVER/LX-16A_driver.cpp.obj: CMakeFiles/Joint_Clion.elf.dir/flags.make
+CMakeFiles/Joint_Clion.elf.dir/bsp/SERVO_DRIVER/LX-16A_driver.cpp.obj: ../bsp/SERVO_DRIVER/LX-16A_driver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/Joint_Clion.elf.dir/bsp/SERVO_DRIVER/LX-16A_driver.cpp.obj"
+	/home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Joint_Clion.elf.dir/bsp/SERVO_DRIVER/LX-16A_driver.cpp.obj -c /home/szy/STM32-files/Joint_clion/Joint_Clion/bsp/SERVO_DRIVER/LX-16A_driver.cpp
+
+CMakeFiles/Joint_Clion.elf.dir/bsp/SERVO_DRIVER/LX-16A_driver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Joint_Clion.elf.dir/bsp/SERVO_DRIVER/LX-16A_driver.cpp.i"
+	/home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/szy/STM32-files/Joint_clion/Joint_Clion/bsp/SERVO_DRIVER/LX-16A_driver.cpp > CMakeFiles/Joint_Clion.elf.dir/bsp/SERVO_DRIVER/LX-16A_driver.cpp.i
+
+CMakeFiles/Joint_Clion.elf.dir/bsp/SERVO_DRIVER/LX-16A_driver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Joint_Clion.elf.dir/bsp/SERVO_DRIVER/LX-16A_driver.cpp.s"
+	/home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/szy/STM32-files/Joint_clion/Joint_Clion/bsp/SERVO_DRIVER/LX-16A_driver.cpp -o CMakeFiles/Joint_Clion.elf.dir/bsp/SERVO_DRIVER/LX-16A_driver.cpp.s
+
+CMakeFiles/Joint_Clion.elf.dir/bsp/SERVO_DRIVER/Servo_driver.cpp.obj: CMakeFiles/Joint_Clion.elf.dir/flags.make
+CMakeFiles/Joint_Clion.elf.dir/bsp/SERVO_DRIVER/Servo_driver.cpp.obj: ../bsp/SERVO_DRIVER/Servo_driver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/Joint_Clion.elf.dir/bsp/SERVO_DRIVER/Servo_driver.cpp.obj"
+	/home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Joint_Clion.elf.dir/bsp/SERVO_DRIVER/Servo_driver.cpp.obj -c /home/szy/STM32-files/Joint_clion/Joint_Clion/bsp/SERVO_DRIVER/Servo_driver.cpp
+
+CMakeFiles/Joint_Clion.elf.dir/bsp/SERVO_DRIVER/Servo_driver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Joint_Clion.elf.dir/bsp/SERVO_DRIVER/Servo_driver.cpp.i"
+	/home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/szy/STM32-files/Joint_clion/Joint_Clion/bsp/SERVO_DRIVER/Servo_driver.cpp > CMakeFiles/Joint_Clion.elf.dir/bsp/SERVO_DRIVER/Servo_driver.cpp.i
+
+CMakeFiles/Joint_Clion.elf.dir/bsp/SERVO_DRIVER/Servo_driver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Joint_Clion.elf.dir/bsp/SERVO_DRIVER/Servo_driver.cpp.s"
+	/home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/szy/STM32-files/Joint_clion/Joint_Clion/bsp/SERVO_DRIVER/Servo_driver.cpp -o CMakeFiles/Joint_Clion.elf.dir/bsp/SERVO_DRIVER/Servo_driver.cpp.s
+
 CMakeFiles/Joint_Clion.elf.dir/bsp/delay.c.obj: CMakeFiles/Joint_Clion.elf.dir/flags.make
 CMakeFiles/Joint_Clion.elf.dir/bsp/delay.c.obj: ../bsp/delay.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/Joint_Clion.elf.dir/bsp/delay.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/Joint_Clion.elf.dir/bsp/delay.c.obj"
 	/home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Joint_Clion.elf.dir/bsp/delay.c.obj -c /home/szy/STM32-files/Joint_clion/Joint_Clion/bsp/delay.c
 
 CMakeFiles/Joint_Clion.elf.dir/bsp/delay.c.i: cmake_force
@@ -616,7 +642,7 @@ CMakeFiles/Joint_Clion.elf.dir/bsp/delay.c.s: cmake_force
 
 CMakeFiles/Joint_Clion.elf.dir/bsp/myiic.c.obj: CMakeFiles/Joint_Clion.elf.dir/flags.make
 CMakeFiles/Joint_Clion.elf.dir/bsp/myiic.c.obj: ../bsp/myiic.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/Joint_Clion.elf.dir/bsp/myiic.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/Joint_Clion.elf.dir/bsp/myiic.c.obj"
 	/home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Joint_Clion.elf.dir/bsp/myiic.c.obj -c /home/szy/STM32-files/Joint_clion/Joint_Clion/bsp/myiic.c
 
 CMakeFiles/Joint_Clion.elf.dir/bsp/myiic.c.i: cmake_force
@@ -629,7 +655,7 @@ CMakeFiles/Joint_Clion.elf.dir/bsp/myiic.c.s: cmake_force
 
 CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.obj: CMakeFiles/Joint_Clion.elf.dir/flags.make
 CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.obj: ../component/PCA9685/PCA9685_driver.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.obj"
 	/home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.obj -c /home/szy/STM32-files/Joint_clion/Joint_Clion/component/PCA9685/PCA9685_driver.c
 
 CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.i: cmake_force
@@ -683,6 +709,8 @@ Joint_Clion_elf_OBJECTS = \
 "CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj" \
 "CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj" \
 "CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj" \
+"CMakeFiles/Joint_Clion.elf.dir/bsp/SERVO_DRIVER/LX-16A_driver.cpp.obj" \
+"CMakeFiles/Joint_Clion.elf.dir/bsp/SERVO_DRIVER/Servo_driver.cpp.obj" \
 "CMakeFiles/Joint_Clion.elf.dir/bsp/delay.c.obj" \
 "CMakeFiles/Joint_Clion.elf.dir/bsp/myiic.c.obj" \
 "CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.obj"
@@ -731,12 +759,14 @@ Joint_Clion.elf: CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS
 Joint_Clion.elf: CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj
 Joint_Clion.elf: CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
 Joint_Clion.elf: CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
+Joint_Clion.elf: CMakeFiles/Joint_Clion.elf.dir/bsp/SERVO_DRIVER/LX-16A_driver.cpp.obj
+Joint_Clion.elf: CMakeFiles/Joint_Clion.elf.dir/bsp/SERVO_DRIVER/Servo_driver.cpp.obj
 Joint_Clion.elf: CMakeFiles/Joint_Clion.elf.dir/bsp/delay.c.obj
 Joint_Clion.elf: CMakeFiles/Joint_Clion.elf.dir/bsp/myiic.c.obj
 Joint_Clion.elf: CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.obj
 Joint_Clion.elf: CMakeFiles/Joint_Clion.elf.dir/build.make
 Joint_Clion.elf: CMakeFiles/Joint_Clion.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Linking CXX executable Joint_Clion.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Linking CXX executable Joint_Clion.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Joint_Clion.elf.dir/link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building /home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug/Joint_Clion.hex"
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building /home/szy/STM32-files/Joint_clion/Joint_Clion/cmake-build-debug/Joint_Clion.bin"

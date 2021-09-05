@@ -62,6 +62,7 @@
 					<Add directory="/home/szy/STM32-files/Joint_clion/Joint_Clion/Applications"/>
 					<Add directory="/home/szy/STM32-files/Joint_clion/Joint_Clion/component/PCA9685"/>
 					<Add directory="/home/szy/STM32-files/Joint_clion/Joint_Clion/bsp"/>
+					<Add directory="/home/szy/STM32-files/Joint_clion/Joint_Clion/bsp/SERVO_DRIVER"/>
 					<Add directory="/home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/include/c++/7.2.1"/>
 					<Add directory="/home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/include/c++/7.2.1/arm-none-eabi"/>
 					<Add directory="/home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/include/c++/7.2.1/backward"/>
@@ -101,6 +102,7 @@
 					<Add directory="/home/szy/STM32-files/Joint_clion/Joint_Clion/Applications"/>
 					<Add directory="/home/szy/STM32-files/Joint_clion/Joint_Clion/component/PCA9685"/>
 					<Add directory="/home/szy/STM32-files/Joint_clion/Joint_Clion/bsp"/>
+					<Add directory="/home/szy/STM32-files/Joint_clion/Joint_Clion/bsp/SERVO_DRIVER"/>
 					<Add directory="/home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/include/c++/7.2.1"/>
 					<Add directory="/home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/include/c++/7.2.1/arm-none-eabi"/>
 					<Add directory="/home/szy/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/include/c++/7.2.1/backward"/>
@@ -459,6 +461,18 @@
 			<Option target="Joint_Clion.elf"/>
 		</Unit>
 		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/STM32F407IGHX_FLASH.ld">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/bsp/SERVO_DRIVER/LX-16A_driver.cpp">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/bsp/SERVO_DRIVER/LX-16A_driver.h">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/bsp/SERVO_DRIVER/Servo_driver.cpp">
+			<Option target="Joint_Clion.elf"/>
+		</Unit>
+		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/bsp/SERVO_DRIVER/Servo_driver.h">
 			<Option target="Joint_Clion.elf"/>
 		</Unit>
 		<Unit filename="/home/szy/STM32-files/Joint_clion/Joint_Clion/bsp/delay.c">

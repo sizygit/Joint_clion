@@ -40,6 +40,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj"
   "CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj"
   "CMakeFiles/Joint_Clion.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj"
+  "CMakeFiles/Joint_Clion.elf.dir/bsp/SERVO_DRIVER/LX-16A_driver.cpp.obj"
+  "CMakeFiles/Joint_Clion.elf.dir/bsp/SERVO_DRIVER/Servo_driver.cpp.obj"
   "CMakeFiles/Joint_Clion.elf.dir/bsp/delay.c.obj"
   "CMakeFiles/Joint_Clion.elf.dir/bsp/myiic.c.obj"
   "CMakeFiles/Joint_Clion.elf.dir/component/PCA9685/PCA9685_driver.c.obj"
